@@ -1,0 +1,831 @@
+<sdf version="1.7">
+  <model name="Shell_car_assembly_red7">
+    <link name="base_link">
+      <inertial>
+        <pose>-0.005 -0 0 0 -0 0</pose>
+        <mass>0.002631</mass>
+        <inertia>
+          <ixx>1.1557e-07</ixx>
+          <ixy>-7.1746e-40</ixy>
+          <ixz>-3.2794e-24</ixz>
+          <iyy>7.6295e-08</iyy>
+          <iyz>-1.6479e-24</iyz>
+          <izz>8.3127e-08</izz>
+        </inertia>
+      </inertial>
+      <collision name="base_link_collision">
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>package://shell_car_model/meshes/visual/base_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="base_link_visual">
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>package://shell_car_model/meshes/visual/base_link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name="arl_link_joint" type="fixed">
+      <pose relative_to="base_link">-0.4668 0.61421 -0.31411 1.573 -0 0.002608</pose>
+      <parent>base_link</parent>
+      <child>arl_link</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="arl_link">
+      <pose relative_to="arl_link_joint">0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0.37403 0.32999 0.0005 0 -0 0</pose>
+        <mass>0.038446</mass>
+        <inertia>
+          <ixx>0.00023481</ixx>
+          <ixy>2.2948e-06</ixy>
+          <ixz>2.1446e-12</ixz>
+          <iyy>0.00024131</iyy>
+          <iyz>1.0126e-12</iyz>
+          <izz>0.00047612</izz>
+        </inertia>
+      </inertial>
+      <collision name="arl_link_collision">
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>package://shell_car_model/meshes/visual/arl_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="arl_link_visual">
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>package://shell_car_model/meshes/visual/arl_link.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0 1 0 1</ambient>
+          <diffuse>0 1 0 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 1</emissive>
+        </material>
+      </visual>
+    </link>
+    <joint name="arl2_link_joint" type="fixed">
+      <pose relative_to="base_link">-0.46679 -0.61321 -0.31412 1.5686 0 -0.0026084</pose>
+      <parent>base_link</parent>
+      <child>arl2_link</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="arl2_link">
+      <pose relative_to="arl2_link_joint">0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0.37403 0.32999 0.0005 0 -0 0</pose>
+        <mass>0.038446</mass>
+        <inertia>
+          <ixx>0.00023481</ixx>
+          <ixy>2.2948e-06</ixy>
+          <ixz>2.1446e-12</ixz>
+          <iyy>0.00024131</iyy>
+          <iyz>1.0126e-12</iyz>
+          <izz>0.00047612</izz>
+        </inertia>
+      </inertial>
+      <collision name="arl2_link_collision">
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>package://shell_car_model/meshes/visual/arl2_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="arl2_link_visual">
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>package://shell_car_model/meshes/visual/arl_link.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0 1 0 1</ambient>
+          <diffuse>0 1 0 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 1</emissive>
+        </material>
+      </visual>
+    </link>
+    <joint name="body_joint" type="fixed">
+      <pose relative_to="base_link">0.795 -0.000269 -0.35 0 -0 0</pose>
+      <parent>base_link</parent>
+      <child>body_link</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="body_link">
+      <pose relative_to="body_joint">0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-1.1081 -0.000309 0.56086 0 -0 0</pose>
+        <mass>11.145</mass>
+        <inertia>
+          <ixx>2.4883</ixx>
+          <ixy>-0.0050052</ixy>
+          <ixz>0.15659</ixz>
+          <iyy>9.017</iyy>
+          <iyz>0.0057389</iyz>
+          <izz>10.569</izz>
+        </inertia>
+      </inertial>
+      <collision name="body_link_collision">
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>package://shell_car_model/meshes/visual/body_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="body_link_visual">
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>package://shell_car_model/meshes/visual/body_link.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>1 0 0 1</ambient>
+          <diffuse>1 0 0 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 1</emissive>
+        </material>
+      </visual>
+    </link>
+    <joint name="head_light_joint" type="fixed">
+      <pose relative_to="body_link">0 0.01 0 0 -0 0</pose>
+      <parent>body_link</parent>
+      <child>head_light_link</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="head_light_link">
+      <pose relative_to="head_light_joint">0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-1.0208 -0.097095 0.40424 0 -0 0</pose>
+        <mass>55.61</mass>
+        <inertia>
+          <ixx>13.719</ixx>
+          <ixy>-2.8473</ixy>
+          <ixz>0.77987</ixz>
+          <iyy>37.376</iyy>
+          <iyz>-0.60487</iyz>
+          <izz>41.522</izz>
+        </inertia>
+      </inertial>
+      <collision name="head_light_link_collision">
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>package://shell_car_model/meshes/visual/head_light_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="head_light_link_visual">
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>package://shell_car_model/meshes/visual/head_light_link.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>1 1 0 1</ambient>
+          <diffuse>1 1 0 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 1</emissive>
+        </material>
+      </visual>
+    </link>
+    <joint name="roof_joint" type="fixed">
+      <pose relative_to="body_link">0 0.01 0 0 -0 0</pose>
+      <parent>body_link</parent>
+      <child>roof_link</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="roof_link">
+      <pose relative_to="roof_joint">0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.8825 -0.010096 1.043 0 -0 0</pose>
+        <mass>1.407</mass>
+        <inertia>
+          <ixx>0.15829</ixx>
+          <ixy>5.2669e-05</ixy>
+          <ixz>0.05681</ixz>
+          <iyy>0.27408</iyy>
+          <iyz>-3.102e-05</iyz>
+          <izz>0.33368</izz>
+        </inertia>
+      </inertial>
+      <collision name="roof_link_collision">
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>package://shell_car_model/meshes/visual/roof_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="roof_link_visual">
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>package://shell_car_model/meshes/visual/roof_link.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+            <ambient>0 0 0 1</ambient>
+            <diffuse>0 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 1</emissive>
+        </material>
+      </visual>
+    </link>
+    <joint name="windows_joint" type="fixed">
+      <pose relative_to="body_link">0 0.01 0 0 -0 0</pose>
+      <parent>body_link</parent>
+      <child>window_link</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="window_link">
+      <pose relative_to="windows_joint">0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-1.0208 -0.097095 0.40424 0 -0 0</pose>
+        <mass>55.61</mass>
+        <inertia>
+          <ixx>13.719</ixx>
+          <ixy>-2.8473</ixy>
+          <ixz>0.77987</ixz>
+          <iyy>37.376</iyy>
+          <iyz>-0.60487</iyz>
+          <izz>41.522</izz>
+        </inertia>
+      </inertial>
+      <collision name="window_link_collision">
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>package://shell_car_model/meshes/visual/window_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="window_link_visual">
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>package://shell_car_model/meshes/visual/window_link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name="chassis_joint" type="fixed">
+      <pose relative_to="base_link">0.795 0.009731 -0.35 0 -0 0</pose>
+      <parent>base_link</parent>
+      <child>chassis_link</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="chassis_link">
+      <pose relative_to="chassis_joint">0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.83026 -0.008255 0.3792 0 -0 0</pose>
+        <mass>19.425</mass>
+        <inertia>
+          <ixx>0.83621</ixx>
+          <ixy>0.007865</ixy>
+          <ixz>0.0038851</ixz>
+          <iyy>0.76001</iyy>
+          <iyz>-0.001533</iyz>
+          <izz>1.2681</izz>
+        </inertia>
+      </inertial>
+      <collision name="chassis_link_collision">
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>package://shell_car_model/meshes/visual/chassis_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="chassis_link_visual">
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>package://shell_car_model/meshes/visual/chassis_link.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.79216 0.81961 0.93333 1</ambient>
+          <diffuse>0.79216 0.81961 0.93333 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 1</emissive>
+        </material>
+      </visual>
+    </link>
+    <joint name="fl_steering_joint" type="revolute">
+      <pose relative_to="chassis_link">0 0.408323 0.273444 0 -0 0</pose>
+      <parent>chassis_link</parent>
+      <child>fl_wheel_assmebly_link</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="fl_wheel_assmebly_link">
+      <pose relative_to="fl_steering_joint">0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0.030219 0.042548 0.033927 0 -0 0</pose>
+        <mass>0.38549</mass>
+        <inertia>
+          <ixx>0.00051797</ixx>
+          <ixy>-1.4271e-06</ixy>
+          <ixz>-5.7336e-05</ixz>
+          <iyy>0.00059031</iyy>
+          <iyz>-3.7245e-06</iyz>
+          <izz>0.00020503</izz>
+        </inertia>
+      </inertial>
+      <collision name="fl_wheel_assmebly_link_collision">
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>package://shell_car_model/meshes/visual/fl_wheel_assmebly_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="fl_wheel_assmebly_link_visual">
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>package://shell_car_model/meshes/visual/fl_wheel_assmebly_link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name="fl_wheel_joint" type="revolute">
+      <pose relative_to="fl_wheel_assmebly_link">0 0.131851 0.006558 0 -0 0</pose>
+      <parent>fl_wheel_assmebly_link</parent>
+      <child>fl_wheel_link</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="fl_wheel_link">
+      <pose relative_to="fl_wheel_joint">0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.000437 -0.001339 -5.4e-05 0 -0 0</pose>
+        <mass>2.7471</mass>
+        <inertia>
+          <ixx>0.060408</ixx>
+          <ixy>4.8975e-07</ixy>
+          <ixz>-2.5088e-05</ixz>
+          <iyy>0.11894</iyy>
+          <iyz>5.5544e-08</iyz>
+          <izz>0.060636</izz>
+        </inertia>
+      </inertial>
+      <collision name="fl_wheel_link_collision">
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>package://shell_car_model/meshes/visual/fl_wheel_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="fl_wheel_link_visual">
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>package://shell_car_model/meshes/visual/fl_wheel_link.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.25098 0.25098 0.25098 1</ambient>
+          <diffuse>0.25098 0.25098 0.25098 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 1</emissive>
+        </material>
+      </visual>
+    </link>
+    <joint name="fr_steering_joint" type="revolute">
+      <pose relative_to="chassis_link">0 -0.427785 0.273444 3.14159 -0 0</pose>
+      <parent>chassis_link</parent>
+      <child>fr_wheel_assembly_link</child>
+      <axis>
+        <xyz>0 0 -1</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="fr_wheel_assembly_link">
+      <pose relative_to="fr_steering_joint">0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.030198 0.042549 -0.033908 0 -0 0</pose>
+        <mass>0.38576</mass>
+        <inertia>
+          <ixx>0.00051798</ixx>
+          <ixy>1.4237e-06</ixy>
+          <ixz>-5.7336e-05</ixz>
+          <iyy>0.00059032</iyy>
+          <iyz>3.7245e-06</iyz>
+          <izz>0.00020504</izz>
+        </inertia>
+      </inertial>
+      <collision name="fr_wheel_assembly_link_collision">
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>package://shell_car_model/meshes/visual/fr_wheel_assembly_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="fr_wheel_assembly_link_visual">
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>package://shell_car_model/meshes/visual/fr_wheel_assembly_link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name="fr_wheel_joint" type="revolute">
+      <pose relative_to="fr_wheel_assembly_link">0 0.130251 -0.006558 0 -0 0</pose>
+      <parent>fr_wheel_assembly_link</parent>
+      <child>fr_wheel_link</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="fr_wheel_link">
+      <pose relative_to="fr_wheel_joint">0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.000168 -0.001315 0.000406 0 -0 0</pose>
+        <mass>2.7493</mass>
+        <inertia>
+          <ixx>0.060607</ixx>
+          <ixy>1.8426e-07</ixy>
+          <ixz>7.998e-05</ixz>
+          <iyy>0.11894</iyy>
+          <iyz>-4.5741e-07</iyz>
+          <izz>0.060437</izz>
+        </inertia>
+      </inertial>
+      <collision name="fr_wheel_link_collision">
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>package://shell_car_model/meshes/visual/fr_wheel_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="fr_wheel_link_visual">
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>package://shell_car_model/meshes/visual/fr_wheel_link.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.25098 0.25098 0.25098 1</ambient>
+          <diffuse>0.25098 0.25098 0.25098 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 1</emissive>
+        </material>
+      </visual>
+    </link>
+    <joint name="motorized_joint" type="revolute">
+      <pose relative_to="chassis_link">-1.6 -0.459731 0.28 3.14159 -0 0</pose>
+      <parent>chassis_link</parent>
+      <child>motorized_wheel_link</child>
+      <axis>
+        <xyz>0 -1 0</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="motorized_wheel_link">
+      <pose relative_to="motorized_joint">0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0 0.0005 0 0 -0 0</pose>
+        <mass>13.706</mass>
+        <inertia>
+          <ixx>0.31075</ixx>
+          <ixy>6.4562e-10</ixy>
+          <ixz>3.5503e-08</ixz>
+          <iyy>0.59943</iyy>
+          <iyz>4.8225e-10</iyz>
+          <izz>0.31075</izz>
+        </inertia>
+      </inertial>
+      <collision name="motorized_wheel_link_collision">
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>package://shell_car_model/meshes/visual/motorized_wheel_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="motorized_wheel_link_visual">
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>package://shell_car_model/meshes/visual/motorized_wheel_link.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.25098 0.25098 0.25098 1</ambient>
+          <diffuse>0.25098 0.25098 0.25098 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 1</emissive>
+        </material>
+      </visual>
+    </link>
+    <joint name="rl_wheel_free_joint" type="revolute">
+      <pose relative_to="chassis_link">-1.6 0.441318 0.28 0 -0 0</pose>
+      <parent>chassis_link</parent>
+      <child>rl_wheel_link</child>
+      <axis>
+        <xyz>0 -1 0</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="rl_wheel_link">
+      <pose relative_to="rl_wheel_free_joint">0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.00044 0.002938 -1e-06 0 -0 0</pose>
+        <mass>2.7917</mass>
+        <inertia>
+          <ixx>0.060714</ixx>
+          <ixy>-4.9284e-07</ixy>
+          <ixz>-5.8675e-06</ixz>
+          <iyy>0.119</iyy>
+          <iyz>-1.0058e-08</iyz>
+          <izz>0.060947</izz>
+        </inertia>
+      </inertial>
+      <collision name="rl_wheel_link_collision">
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>package://shell_car_model/meshes/visual/rl_wheel_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="rl_wheel_link_visual">
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>package://shell_car_model/meshes/visual/rl_wheel_link.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.25098 0.25098 0.25098 1</ambient>
+          <diffuse>0.25098 0.25098 0.25098 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 1</emissive>
+        </material>
+      </visual>
+    </link>
+    <joint name="velodyne_joint" type="fixed">
+      <pose relative_to="base_link">-0.207889 0 0.924414 0 -0 0</pose>
+      <parent>base_link</parent>
+      <child>velodyne_link</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="velodyne_link">
+      <pose relative_to="velodyne_joint">0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-9.8e-05 -2e-06 0.005832 0 -0 0</pose>
+        <mass>0.69573</mass>
+        <inertia>
+          <ixx>0.00087851</ixx>
+          <ixy>8.3578e-11</ixy>
+          <ixz>8.3325e-08</ixz>
+          <iyy>0.00087898</iyy>
+          <iyz>-6.8679e-08</iyz>
+          <izz>0.00088986</izz>
+        </inertia>
+      </inertial>
+      <collision name="velodyne_link_collision">
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>package://shell_car_model/meshes/visual/velodyne_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="velodyne_link_visual">
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>package://shell_car_model/meshes/visual/velodyne_link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name="zed_camera" type="fixed">
+      <pose relative_to="base_link">0.846756 -0.008969 0.400393 0 -0 0</pose>
+      <parent>base_link</parent>
+      <child>zed_link</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="zed_link">
+      <pose relative_to="zed_camera">0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.019269 1e-06 -0.000181 0 -0 0</pose>
+        <mass>0.17032</mass>
+        <inertia>
+          <ixx>0.00038294</ixx>
+          <ixy>3.2819e-09</ixy>
+          <ixz>-6.4524e-08</ixz>
+          <iyy>3.2574e-05</iyy>
+          <iyz>1.3858e-09</iyz>
+          <izz>0.00039062</izz>
+        </inertia>
+      </inertial>
+      <collision name="zed_link_collision">
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>package://shell_car_model/meshes/visual/zed_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="zed_link_visual">
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>package://shell_car_model/meshes/visual/zed_link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>
