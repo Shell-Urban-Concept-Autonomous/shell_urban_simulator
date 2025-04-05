@@ -1,0 +1,26 @@
+services:
+  gazebo_simulator:
+    build:
+      context: .
+      dockerfile: dockerfile
+    image: coppeliasim # name of the image that will be created
+    privileged: true 
+    environment:
+      - DISPLAY
+      - XAUTHORITY=/tmp/.Xauthority
+      - NVIDIA_DRIVER_CAPABILITIES=all
+      - __NV_PRIME_RENDER_OFFLOAD=1
+      - __GLX_VENDOR_LIBRARY_NAME=nvidia
+    volumes:
+      - ~/.Xauthority:/root/.Xauthority # share the Xauthority file with the host
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw # share the X11 socket with the host
+      - /dev:/dev # share the devices with the host
+      - /dev/shm:/dev/shm # share the shared memory with the host
+    # share the network with the host 
+    pid: host
+    network_mode: host
+    ipc: host
+    # share the X11 socket with the host to display the GUI
+    runtime: nvidia # use the nvidia runtime to access the GPU
+    container_name: simulator_contaioner # name of the container that will be created
+    restart: no # do not restart the container automatically

@@ -3,37 +3,37 @@ FROM nvidia/cuda:12.6.1-base-ubuntu22.04
 SHELL ["/bin/bash", "-c"]
 # install ros2 humble
 
-RUN apt update && sudo apt install locales
+RUN apt update -y && apt -y install locales
 RUN locale-gen en_US en_US.UTF-8
 RUN update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
 ENV LANG=en_US.UTF-8
 
-RUN apt install software-properties-common
-RUN add-apt-repository universe
+RUN apt install software-properties-common -y
+RUN add-apt-repository universe -y
 
-RUN apt update && sudo apt install curl -y
+RUN apt update -y && apt install curl -y
 RUN curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
 
-RUN echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-release && echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
+RUN echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-release && echo $UBUNTU_CODENAME) main" | tee /etc/apt/sources.list.d/ros2.list > /dev/null
 
-RUN apt-get update -y\
+RUN export DEBIAN_FRONTEND=noninteractive && \ 
+    apt-get update -y\
     && apt-get upgrade -y \
-    && apt-get install -y ros-humble-desktop-full
+    && apt-get install -y ros-humble-desktop
 
-
-COPY .bashrc home/ubuntu/.bashrc
-RUN source home/ubuntu/.bashrc
+COPY .bashrc /home/ubuntu/.bashrc
+RUN echo "source /home/ubuntu/.bashrc" >> /home/ubuntu/.bashrc
 
 # install coppeliasim
 RUN apt-get update -y \
-    && apt-get install python3-colcon-common-extensions \
+    && apt-get install -y python3-colcon-common-extensions \
     && apt-get install -y python3-pip \
     && pip3 install -U setuptools==58.0.2 \ 
     && apt-get install -y git \
     && apt-get install -y gedit \
     && apt-get install -y wget \
     && apt-get install -y libgl1-mesa-glx \
-    && apt-get install xsltproc \
+    && apt-get install -y xsltproc \
     && apt-get install -y --no-install-recommends \
         vim tar xz-utils \
         libx11-6 libxcb1 libxau6 libgl1-mesa-dev \
@@ -44,6 +44,11 @@ RUN apt-get update -y \
 
 RUN pip3 install pyzmq cbor2 xmlschema
 
+# Create ubuntu user
+RUN useradd -m -s /bin/bash ubuntu
+# Ensure the ubuntu user has the necessary permissions
+RUN chown -R ubuntu:ubuntu /home/ubuntu
+
 # install coppeliasim
 USER ubuntu
     WORKDIR /home/ubuntu
@@ -53,3 +58,13 @@ USER ubuntu
         WORKDIR /home/ubuntu/shell_urban_simulator
             RUN colcon build --symlink-install
             RUN echo "source /home/ubuntu/shell_urban_simulator/install/setup.bash" >> /home/ubuntu/.bashrc 
+
+
+USER root
+    RUN apt-get install -y ros-humble-joint-*
+    COPY entrypoint.sh /home/ubuntu/shell_urban_simulator/entrypoint.sh
+    RUN chmod +x /home/ubuntu/shell_urban_simulator/entrypoint.sh
+
+USER ubuntu
+    ENTRYPOINT [ "/home/ubuntu/shell_urban_simulator/entrypoint.sh" ]
+
