@@ -14,7 +14,7 @@ REMOTE_COMMIT_ID=$(git rev-parse @{u})
 # Compare the hashes to see if anything changed
 if [ "$LOCAL_COMMIT_ID" != "$REMOTE_COMMIT_ID" ]; then
     echo -e "${Yellow}Changes detected and pulled from remote repository!"
-    git pull https://${GITHUB_USR_NAME}:${GITHUB_USR_TOKEN}@github.com/${ORGANIZATION_NAME}/${REPO_NAME}.git
+    git pull https://github.com/Shell-Urban-Concept-Autonomous/shell_urban_simulator.git
     #do some operation after pulling
 else
     echo -e "${Green}Repository is already up to date. No changes pulled."
