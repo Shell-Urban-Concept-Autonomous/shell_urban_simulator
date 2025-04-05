@@ -101,3 +101,5 @@ docker compose up
 | `/odom`              | publish global postion of the cog of the car           | `geometry_msgs/msg/Pose`    | coppeliasim → ROS     | Provide global postion of the car      |
 
 
+# ScreenShots for inside the simulator
+![WhatsApp Image 2025-04-05 at 14 58 56_ec690ff4](https://github.com/user-attachments/assets/bea6d0bd-d3c1-449c-b264-846c0f62fdb5)
