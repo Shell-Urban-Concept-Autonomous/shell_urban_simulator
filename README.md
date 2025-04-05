@@ -86,3 +86,12 @@ sudo nvidia-ctk config --set nvidia-container-cli.no-cgroups --in-place
 cd docker
 docker compose up
 ```
+
+# Topics
+| **Topic Name**       | **Description**                     | **Message Type**               | **Direction**    | **Role**                              |
+|-----------------------|-------------------------------------|---------------------------------|------------------|---------------------------------------|
+| `/cmd`               | Publishes car linear velocity in km/h           | `std_msgs/msg/Float32`      | coppeliasim → ROS     | publish linear velocity commands          |
+| `/steering_wheel_cmd`| Publishes steering wheel command in degree   | `std_msgs/msg/Float32`       | coppeliasim → ROS     | publish steering wheel commands        |
+| `/odom`              | publish global postion of the cog of the car           | `geometry_msgs/msg/Pose`    | coppeliasim → ROS     | Provide global postion of the car      |
+
+
