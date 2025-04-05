@@ -1,3 +1,9 @@
+<p align="center">
+  <img width=300 src="https://github.com/user-attachments/assets/711ffbca-01dc-4ad6-af79-e4d849f745fb" />
+   <img width=150 src="https://github.com/ebrahimabdelghfar/EVER_Simulator/assets/81301684/701fb094-edd0-4d97-a3be-eca381d8a3c2" />
+</p>
+
+
 ># Introduction
 This is a simulator developed for Autotronics Research Teams to test their autononmous stack on it
 ># Specs
