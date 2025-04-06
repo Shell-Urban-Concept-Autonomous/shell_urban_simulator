@@ -87,7 +87,13 @@ sudo nvidia-ctk config --set nvidia-container-cli.no-cgroups --in-place
 ```
 
 ># How To Work
-
+1. install cyclone dds to have intercommunication without any problem
+    ```bash
+    sudo apt install ros-${ROS_DISTRO}-rmw-cyclonedds-cpp
+    echo "export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp" >> ~/.bashrc
+    source .bashrc
+    ```
+2. run the docker container
 ```bash
 cd docker
 docker compose up
