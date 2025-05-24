@@ -1,14 +1,12 @@
 <?xml version="1.0"?>
 <sdf version="1.6">
   <world name="depot">
-    <scene>
-      <grid>false</grid>
-    </scene>
-    <physics type="ode">
-      <max_step_size>0.004</max_step_size>
-      <real_time_factor>1.0</real_time_factor>
-      <real_time_update_rate>250</real_time_update_rate>
+<physics type="dart">
+    <max_step_size>0.008</max_step_size>
+    <real_time_factor>1.0</real_time_factor>
+    <real_time_update_rate>5000</real_time_update_rate>
     </physics>
+    <render_engine>ogre2</render_engine>
     <!-- <plugin name='gz::sim::systems::JointController' filename='gz-sim-joint-controller-system'/> -->
     <plugin name='gz::sim::systems::Physics' filename='gz-sim-physics-system'/>
     <plugin name='gz::sim::systems::UserCommands' filename='gz-sim-user-commands-system'/>
@@ -20,54 +18,110 @@
       <render_engine>ogre2</render_engine>
     </plugin>
 
+    <gui fullscreen="0">
+        <!-- 3D scene -->
+      <plugin filename="GzScene3D" name="3D View">
+      <ignition-gui>
+          <title>3D View</title>
+          <property type="bool" key="showTitleBar">false</property>
+          <property type="string" key="state">docked</property>
+      </ignition-gui>
+
+    <engine>ogre2</engine>
+      <scene>scene</scene>
+      <ambient_light>1.0 1.0 1.0</ambient_light>
+      <background_color>0.8 0.8 0.8</background_color>
+      <camera_pose>-6 0 6 0 0.5 0</camera_pose>
+    </plugin>
+
+    <!-- World control -->
+    <plugin filename="WorldControl" name="World control">
+      <ignition-gui>
+        <title>World control</title>
+        <property type="bool" key="showTitleBar">false</property>
+        <property type="bool" key="resizable">false</property>
+        <property type="double" key="height">72</property>
+        <property type="double" key="width">121</property>
+        <property type="double" key="z">1</property>
+
+        <property type="string" key="state">floating</property>
+        <anchors target="3D View">
+          <line own="left" target="left"/>
+          <line own="bottom" target="bottom"/>
+        </anchors>
+      </ignition-gui>
+
+      <play_pause>true</play_pause>
+      <step>true</step>
+    </plugin>
+
+    <!-- World statistics -->
+    <plugin filename="WorldStats" name="World stats">
+        <ignition-gui>
+            <title>World stats</title>
+            <property type="bool" key="showTitleBar">false</property>
+            <property type="bool" key="resizable">false</property>
+            <property type="double" key="height">110</property>
+            <property type="double" key="width">290</property>
+            <property type="double" key="z">1</property>
+
+            <property type="string" key="state">floating</property>
+            <anchors target="3D View">
+            <line own="right" target="right"/>
+            <line own="bottom" target="bottom"/>
+            </anchors>
+        </ignition-gui>
+
+        <sim_time>true</sim_time>
+        <real_time>true</real_time>
+        <real_time_factor>true</real_time_factor>
+        <iterations>true</iterations>
+    </plugin>
+
+    <!-- Entity tree -->
+    <plugin filename="EntityTree" name="Entity tree">
+    </plugin>
+  </gui>
+
     <light type="directional" name="sun">
-      <pose>0 0 10 0 0 0</pose> <!-- Position and orientation: x y z roll pitch yaw -->
-      <diffuse>1 1 1 1</diffuse> <!-- Bright white light for diffuse illumination -->
-      <specular>0.2 0.2 0.2 1</specular> <!-- Lower specular to soften shiny highlights -->
+      <cast_shadows>true</cast_shadows>
+      <pose>0 0 10 0 0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
       <attenuation>
         <range>1000</range>
         <constant>0.9</constant>
         <linear>0.01</linear>
         <quadratic>0.001</quadratic>
       </attenuation>
-      <direction>-0.5 0.1 -0.9</direction> <!-- Direction of the light -->
+      <direction>-0.5 0.1 -0.9</direction>
     </light>
-      
-    <model name="custom_ground_plane">
+
+    <scene>
+      <sky>
+        <clouds>
+          <speed>12</speed>
+        </clouds>
+      </sky>
+      <grid>false</grid>
+    </scene>
+
+    <spherical_coordinates>
+      <surface_model>EARTH_WGS84</surface_model>
+      <latitude_deg>27.9162477</latitude_deg>
+      <longitude_deg>30.5634376</longitude_deg>
+      <elevation>0</elevation>
+      <heading_deg>0</heading_deg>
+    </spherical_coordinates>
+
+
+
+    <include>
+      <uri>model://shell_car_model/track</uri>
+      <pose>0 0 0 0.0 0.0 0</pose>
+      <name>track</name>
       <static>true</static>
-      <link name="link">
-        <collision name="collision">
-          <geometry>
-            <plane>
-              <normal>0 0 1</normal>
-              <size>100 100</size>
-            </plane>
-          </geometry>
-        </collision>
-        <visual name="visual">
-          <cast_shadows>false</cast_shadows>
-          <geometry>
-            <plane>
-              <normal>0 0 1</normal>
-              <size>100 100</size>
-            </plane>
-          </geometry>
-          <material>
-            <ambient>0.8 0.8 0.8 1</ambient>
-            <diffuse>0.8 0.8 0.8 1</diffuse>
-            <specular>0.2 0.2 0.2 1</specular>
-            <emissive>0 0 0 1</emissive>
-          </material>
-        </visual>
-      </link>
-      <pose>0 0 0 0 0 0</pose>
-    </model>
-
-
-    <!-- <include>
-      <pose>0 0 10.4 0 0 0</pose>
-      <uri>model://robot_description/urdf/assembly_robot.sdf</uri>
-    </include>  -->
+    </include> 
 
   </world>
 </sdf>

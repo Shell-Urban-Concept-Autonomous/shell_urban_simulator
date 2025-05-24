@@ -1,0 +1,146 @@
+1748102664.938145 [0] static_tra: config: Domain/General/MulticastRecvNetworkInterfaceAddresses/#text: preferred {}
+1748102664.938175 [0] static_tra: config: Domain/General/Interfaces/NetworkInterface[@autodetermine]: true {1}
+1748102664.938182 [0] static_tra: config: Domain/General/Interfaces/NetworkInterface[@name]:  {}
+1748102664.938188 [0] static_tra: config: Domain/General/Interfaces/NetworkInterface[@address]:  {}
+1748102664.938192 [0] static_tra: config: Domain/General/Interfaces/NetworkInterface[@priority]: default {}
+1748102664.938197 [0] static_tra: config: Domain/General/Interfaces/NetworkInterface[@prefer_multicast]: false {}
+1748102664.938202 [0] static_tra: config: Domain/General/Interfaces/NetworkInterface[@presence_required]: true {}
+1748102664.938206 [0] static_tra: config: Domain/General/Interfaces/NetworkInterface[@multicast]: default {}
+1748102664.938211 [0] static_tra: config: Domain/General/ExternalNetworkAddress/#text: auto {}
+1748102664.938216 [0] static_tra: config: Domain/General/ExternalNetworkMask/#text: 0.0.0.0 {}
+1748102664.938221 [0] static_tra: config: Domain/General/AllowMulticast/#text: false {1}
+1748102664.938230 [0] static_tra: config: Domain/General/MulticastTimeToLive/#text: 32 {}
+1748102664.938238 [0] static_tra: config: Domain/General/DontRoute/#text: false {}
+1748102664.938243 [0] static_tra: config: Domain/General/Transport/#text: udp {}
+1748102664.938247 [0] static_tra: config: Domain/General/EnableMulticastLoopback/#text: false {1}
+1748102664.938252 [0] static_tra: config: Domain/General/MaxMessageSize/#text: 65500 B {1}
+1748102664.938257 [0] static_tra: config: Domain/General/MaxRexmitMessageSize/#text: 1456 B {}
+1748102664.938262 [0] static_tra: config: Domain/General/FragmentSize/#text: 1344 B {}
+1748102664.938267 [0] static_tra: config: Domain/General/RedundantNetworking/#text: false {}
+1748102664.938272 [0] static_tra: config: Domain/General/EntityAutoNaming/#text: empty {}
+1748102664.938278 [0] static_tra: config: Domain/General/EntityAutoNaming[@seed]: 2236488920 846370452 3393551996 1109925413 4023269945 4069054763 1240668478 3131195144 {}
+1748102664.938284 [0] static_tra: config: Domain/Sizing/ReceiveBufferSize/#text: 1 MiB {}
+1748102664.938289 [0] static_tra: config: Domain/Sizing/ReceiveBufferChunkSize/#text: 128 KiB {}
+1748102664.938295 [0] static_tra: config: Domain/Compatibility/StandardsConformance/#text: lax {}
+1748102664.938299 [0] static_tra: config: Domain/Compatibility/ExplicitlyPublishQosSetToDefault/#text: false {}
+1748102664.938304 [0] static_tra: config: Domain/Compatibility/ManySocketsMode/#text: single {}
+1748102664.938309 [0] static_tra: config: Domain/Compatibility/AssumeRtiHasPmdEndpoints/#text: false {}
+1748102664.938314 [0] static_tra: config: Domain/Discovery/Tag/#text:  {}
+1748102664.938319 [0] static_tra: config: Domain/Discovery/ExternalDomainId/#text: 0 {}
+1748102664.938324 [0] static_tra: config: Domain/Discovery/DSGracePeriod/#text: 30 s {}
+1748102664.938330 [0] static_tra: config: Domain/Discovery/Peers/Peer[@Address]: localhost {1}
+1748102664.938335 [0] static_tra: config: Domain/Discovery/Peers/Peer[@Address]: 50.0.0.159 {1}
+1748102664.938341 [0] static_tra: config: Domain/Discovery/Peers/Peer[@Address]: 50.0.0.135 {1}
+1748102664.938345 [0] static_tra: config: Domain/Discovery/ParticipantIndex/#text: none {}
+1748102664.938350 [0] static_tra: config: Domain/Discovery/MaxAutoParticipantIndex/#text: 9 {}
+1748102664.938355 [0] static_tra: config: Domain/Discovery/SPDPMulticastAddress/#text: 239.255.0.1 {}
+1748102664.938360 [0] static_tra: config: Domain/Discovery/SPDPInterval/#text: 30 s {}
+1748102664.938365 [0] static_tra: config: Domain/Discovery/DefaultMulticastAddress/#text: auto {}
+1748102664.938370 [0] static_tra: config: Domain/Discovery/Ports/Base/#text: 7400 {}
+1748102664.938375 [0] static_tra: config: Domain/Discovery/Ports/DomainGain/#text: 250 {}
+1748102664.938380 [0] static_tra: config: Domain/Discovery/Ports/ParticipantGain/#text: 2 {}
+1748102664.938385 [0] static_tra: config: Domain/Discovery/Ports/MulticastMetaOffset/#text: 0 {}
+1748102664.938395 [0] static_tra: config: Domain/Discovery/Ports/UnicastMetaOffset/#text: 10 {}
+1748102664.938401 [0] static_tra: config: Domain/Discovery/Ports/MulticastDataOffset/#text: 1 {}
+1748102664.938406 [0] static_tra: config: Domain/Discovery/Ports/UnicastDataOffset/#text: 11 {}
+1748102664.938411 [0] static_tra: config: Domain/Discovery/EnableTopicDiscoveryEndpoints/#text: true {1}
+1748102664.938416 [0] static_tra: config: Domain/Discovery/LeaseDuration/#text: 10 s {}
+1748102664.938427 [0] static_tra: config: Domain/Tracing/Category/#text: fatal,error,warning,info,config {1}
+1748102664.938433 [0] static_tra: config: Domain/Tracing/OutputFile/#text: cdds.log.88510 {1}
+1748102664.938438 [0] static_tra: config: Domain/Tracing/AppendToFile/#text: false {}
+1748102664.938442 [0] static_tra: config: Domain/Tracing/PacketCaptureFile/#text:  {}
+1748102664.938448 [0] static_tra: config: Domain/Internal/DeliveryQueueMaxSamples/#text: 256 {}
+1748102664.938452 [0] static_tra: config: Domain/Internal/PrimaryReorderMaxSamples/#text: 128 {}
+1748102664.938457 [0] static_tra: config: Domain/Internal/SecondaryReorderMaxSamples/#text: 128 {}
+1748102664.938462 [0] static_tra: config: Domain/Internal/DefragUnreliableMaxSamples/#text: 4 {}
+1748102664.938467 [0] static_tra: config: Domain/Internal/DefragReliableMaxSamples/#text: 16 {}
+1748102664.938472 [0] static_tra: config: Domain/Internal/BuiltinEndpointSet/#text: writers {}
+1748102664.938477 [0] static_tra: config: Domain/Internal/MeasureHbToAckLatency/#text: false {}
+1748102664.938481 [0] static_tra: config: Domain/Internal/UnicastResponseToSPDPMessages/#text: true {}
+1748102664.938486 [0] static_tra: config: Domain/Internal/SynchronousDeliveryPriorityThreshold/#text: 0 {}
+1748102664.938491 [0] static_tra: config: Domain/Internal/SynchronousDeliveryLatencyBound/#text: inf {}
+1748102664.938496 [0] static_tra: config: Domain/Internal/MaxParticipants/#text: 0 {}
+1748102664.938501 [0] static_tra: config: Domain/Internal/AccelerateRexmitBlockSize/#text: 0 {}
+1748102664.938506 [0] static_tra: config: Domain/Internal/RetransmitMerging/#text: never {}
+1748102664.938511 [0] static_tra: config: Domain/Internal/RetransmitMergingPeriod/#text: 5 ms {}
+1748102664.938516 [0] static_tra: config: Domain/Internal/HeartbeatInterval/#text: 100 ms {}
+1748102664.938521 [0] static_tra: config: Domain/Internal/HeartbeatInterval[@min]: 5 ms {}
+1748102664.938526 [0] static_tra: config: Domain/Internal/HeartbeatInterval[@minsched]: 20 ms {}
+1748102664.938531 [0] static_tra: config: Domain/Internal/HeartbeatInterval[@max]: 8 s {}
+1748102664.938536 [0] static_tra: config: Domain/Internal/MaxQueuedRexmitBytes/#text: 512 KiB {}
+1748102664.938541 [0] static_tra: config: Domain/Internal/MaxQueuedRexmitMessages/#text: 200 {}
+1748102664.938546 [0] static_tra: config: Domain/Internal/WriterLingerDuration/#text: 1 s {}
+1748102664.938551 [0] static_tra: config: Domain/Internal/SocketReceiveBufferSize[@min]: default {}
+1748102664.938556 [0] static_tra: config: Domain/Internal/SocketReceiveBufferSize[@max]: default {}
+1748102664.938561 [0] static_tra: config: Domain/Internal/SocketSendBufferSize[@min]: 64 KiB {}
+1748102664.938566 [0] static_tra: config: Domain/Internal/SocketSendBufferSize[@max]: default {}
+1748102664.938571 [0] static_tra: config: Domain/Internal/NackDelay/#text: 100 ms {}
+1748102664.938576 [0] static_tra: config: Domain/Internal/AckDelay/#text: 10 ms {}
+1748102664.938581 [0] static_tra: config: Domain/Internal/AutoReschedNackDelay/#text: 3 s {}
+1748102664.938586 [0] static_tra: config: Domain/Internal/PreEmptiveAckDelay/#text: 10 ms {}
+1748102664.938590 [0] static_tra: config: Domain/Internal/ScheduleTimeRounding/#text: 0 s {}
+1748102664.938595 [0] static_tra: config: Domain/Internal/DDSI2DirectMaxThreads/#text: 1 {}
+1748102664.938600 [0] static_tra: config: Domain/Internal/SquashParticipants/#text: false {}
+1748102664.938605 [0] static_tra: config: Domain/Internal/SPDPResponseMaxDelay/#text: 0 s {}
+1748102664.938610 [0] static_tra: config: Domain/Internal/LateAckMode/#text: false {}
+1748102664.938615 [0] static_tra: config: Domain/Internal/RetryOnRejectBestEffort/#text: false {}
+1748102664.938622 [0] static_tra: config: Domain/Internal/GenerateKeyhash/#text: false {}
+1748102664.938628 [0] static_tra: config: Domain/Internal/MaxSampleSize/#text: 2147483647 B {}
+1748102664.938632 [0] static_tra: config: Domain/Internal/LivelinessMonitoring/#text: false {}
+1748102664.938637 [0] static_tra: config: Domain/Internal/LivelinessMonitoring[@StackTraces]: true {}
+1748102664.938642 [0] static_tra: config: Domain/Internal/LivelinessMonitoring[@Interval]: 1 s {}
+1748102664.938648 [0] static_tra: config: Domain/Internal/MonitorPort/#text: -1 {}
+1748102664.938652 [0] static_tra: config: Domain/Internal/PrioritizeRetransmit/#text: true {}
+1748102664.938657 [0] static_tra: config: Domain/Internal/UseMulticastIfMreqn/#text: 0 {}
+1748102664.938662 [0] static_tra: config: Domain/Internal/RediscoveryBlacklistDuration/#text: 0 s {}
+1748102664.938667 [0] static_tra: config: Domain/Internal/RediscoveryBlacklistDuration[@enforce]: false {}
+1748102664.938672 [0] static_tra: config: Domain/Internal/MultipleReceiveThreads/#text: default {}
+1748102664.938677 [0] static_tra: config: Domain/Internal/MultipleReceiveThreads[@maxretries]: 4294967295 {}
+1748102664.938682 [0] static_tra: config: Domain/Internal/Test/XmitLossiness/#text: 0 {}
+1748102664.938688 [0] static_tra: config: Domain/Internal/Watermarks/WhcLow/#text: 1 KiB {}
+1748102664.938693 [0] static_tra: config: Domain/Internal/Watermarks/WhcHigh/#text: 500 KiB {1}
+1748102664.938698 [0] static_tra: config: Domain/Internal/Watermarks/WhcHighInit/#text: 30 KiB {}
+1748102664.938703 [0] static_tra: config: Domain/Internal/Watermarks/WhcAdaptive/#text: true {}
+1748102664.938709 [0] static_tra: config: Domain/Internal/BurstSize/MaxRexmit/#text: 1 MiB {}
+1748102664.938714 [0] static_tra: config: Domain/Internal/BurstSize/MaxInitTransmit/#text: 4294967295 {}
+1748102664.938719 [0] static_tra: config: Domain/Internal/EnableExpensiveChecks/#text:  {}
+1748102664.938724 [0] static_tra: config: Domain/TCP/NoDelay/#text: true {}
+1748102664.938729 [0] static_tra: config: Domain/TCP/Port/#text: -1 {}
+1748102664.938734 [0] static_tra: config: Domain/TCP/ReadTimeout/#text: 2 s {}
+1748102664.938739 [0] static_tra: config: Domain/TCP/WriteTimeout/#text: 2 s {}
+1748102664.938744 [0] static_tra: config: Domain/TCP/AlwaysUsePeeraddrForUnicast/#text: false {}
+1748102664.938749 [0] static_tra: config: Domain/SSL/Enable/#text: false {}
+1748102664.938754 [0] static_tra: config: Domain/SSL/CertificateVerification/#text: true {}
+1748102664.938759 [0] static_tra: config: Domain/SSL/VerifyClient/#text: true {}
+1748102664.938764 [0] static_tra: config: Domain/SSL/SelfSignedCertificates/#text: false {}
+1748102664.938769 [0] static_tra: config: Domain/SSL/KeystoreFile/#text: keystore {}
+1748102664.938774 [0] static_tra: config: Domain/SSL/KeyPassphrase/#text: secret {}
+1748102664.938778 [0] static_tra: config: Domain/SSL/Ciphers/#text: ALL:!ADH:!LOW:!EXP:!MD5:@STRENGTH {}
+1748102664.938783 [0] static_tra: config: Domain/SSL/EntropyFile/#text:  {}
+1748102664.938789 [0] static_tra: config: Domain/SSL/MinimumTLSVersion/#text: 1.3 {}
+1748102664.938793 [0] static_tra: config: Domain/SharedMemory/Enable/#text: false {}
+1748102664.938798 [0] static_tra: config: Domain/SharedMemory/Locator/#text:  {}
+1748102664.938803 [0] static_tra: config: Domain/SharedMemory/Prefix/#text: DDS_CYCLONE {}
+1748102664.938808 [0] static_tra: config: Domain/SharedMemory/LogLevel/#text: info {}
+1748102664.938813 [0] static_tra: config: Domain[@Id]: 0 {1}
+1748102664.938835 [0] static_tra: started at 1748102664.06938823 -- 2025-05-24 19:04:24+03:00
+1748102664.938841 [0] static_tra: udp initialized
+1748102664.951501 [0] static_tra: interfaces: lo udp/127.0.0.1(q1) wlo1 wireless udp/192.168.1.173(q9) docker0 udp/172.17.0.1(q9)
+1748102664.951521 [0] static_tra: determined wlo1 (udp/192.168.1.173) as highest quality interface, selected for automatic interface.
+1748102664.951550 [0] static_tra: selected interfaces: wlo1 (index 3 priority 0)
+1748102664.951592 [0] static_tra: ownip: udp/192.168.1.173
+1748102664.951608 [0] static_tra: extmask: invalid/0 (not applicable)
+1748102664.951613 [0] static_tra: SPDP MC: udp/239.255.0.1
+1748102664.951618 [0] static_tra: default MC: udp/239.255.0.1
+1748102664.951622 [0] static_tra: SSM support included
+1748102664.951765 [0] static_tra: failed to increase socket receive buffer size to 1048576 bytes, continuing with 425984 bytes
+1748102664.951781 [0] static_tra: rtps_init: uc ports: disc 0 data 0
+1748102664.951790 [0] static_tra: rtps_init: domainid 0 participantid -2
+1748102664.951795 [0] static_tra: Unicast Ports: discovery 40315 data 40315
+1748102664.951806 [0] static_tra: failed to increase socket receive buffer size to 1048576 bytes, continuing with 425984 bytes
+1748102664.951815 [0] static_tra: interface wlo1: transmit port 33553
+1748102664.951947 [0] static_tra: add_peer_addresses: add udp/127.0.0.1:7410, :7412, :7414, :7416, :7418, :7420, :7422, :7424, :7426
+1748102664.951960 [0] static_tra: add_peer_addresses: add udp/50.0.0.159:7410, :7412, :7414, :7416, :7418, :7420, :7422, :7424, :7426
+1748102664.951971 [0] static_tra: add_peer_addresses: add udp/50.0.0.135:7410, :7412, :7414, :7416, :7418, :7420, :7422, :7424, :7426
+1748102671.573021 [0] static_tra: udp finalized
+1748102671.573137 [0] static_tra: Finis.

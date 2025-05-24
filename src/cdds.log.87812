@@ -1,0 +1,146 @@
+1748102644.666470 [0] joint_stat: config: Domain/General/MulticastRecvNetworkInterfaceAddresses/#text: preferred {}
+1748102644.666493 [0] joint_stat: config: Domain/General/Interfaces/NetworkInterface[@autodetermine]: true {1}
+1748102644.666497 [0] joint_stat: config: Domain/General/Interfaces/NetworkInterface[@name]:  {}
+1748102644.666501 [0] joint_stat: config: Domain/General/Interfaces/NetworkInterface[@address]:  {}
+1748102644.666504 [0] joint_stat: config: Domain/General/Interfaces/NetworkInterface[@priority]: default {}
+1748102644.666506 [0] joint_stat: config: Domain/General/Interfaces/NetworkInterface[@prefer_multicast]: false {}
+1748102644.666509 [0] joint_stat: config: Domain/General/Interfaces/NetworkInterface[@presence_required]: true {}
+1748102644.666512 [0] joint_stat: config: Domain/General/Interfaces/NetworkInterface[@multicast]: default {}
+1748102644.666515 [0] joint_stat: config: Domain/General/ExternalNetworkAddress/#text: auto {}
+1748102644.666518 [0] joint_stat: config: Domain/General/ExternalNetworkMask/#text: 0.0.0.0 {}
+1748102644.666521 [0] joint_stat: config: Domain/General/AllowMulticast/#text: false {1}
+1748102644.666524 [0] joint_stat: config: Domain/General/MulticastTimeToLive/#text: 32 {}
+1748102644.666527 [0] joint_stat: config: Domain/General/DontRoute/#text: false {}
+1748102644.666529 [0] joint_stat: config: Domain/General/Transport/#text: udp {}
+1748102644.666532 [0] joint_stat: config: Domain/General/EnableMulticastLoopback/#text: false {1}
+1748102644.666535 [0] joint_stat: config: Domain/General/MaxMessageSize/#text: 65500 B {1}
+1748102644.666538 [0] joint_stat: config: Domain/General/MaxRexmitMessageSize/#text: 1456 B {}
+1748102644.666541 [0] joint_stat: config: Domain/General/FragmentSize/#text: 1344 B {}
+1748102644.666544 [0] joint_stat: config: Domain/General/RedundantNetworking/#text: false {}
+1748102644.666547 [0] joint_stat: config: Domain/General/EntityAutoNaming/#text: empty {}
+1748102644.666550 [0] joint_stat: config: Domain/General/EntityAutoNaming[@seed]: 1949438347 2154158633 1316771552 2630107828 1842684066 3964908087 2465719035 1694054983 {}
+1748102644.666554 [0] joint_stat: config: Domain/Sizing/ReceiveBufferSize/#text: 1 MiB {}
+1748102644.666557 [0] joint_stat: config: Domain/Sizing/ReceiveBufferChunkSize/#text: 128 KiB {}
+1748102644.666560 [0] joint_stat: config: Domain/Compatibility/StandardsConformance/#text: lax {}
+1748102644.666563 [0] joint_stat: config: Domain/Compatibility/ExplicitlyPublishQosSetToDefault/#text: false {}
+1748102644.666566 [0] joint_stat: config: Domain/Compatibility/ManySocketsMode/#text: single {}
+1748102644.666569 [0] joint_stat: config: Domain/Compatibility/AssumeRtiHasPmdEndpoints/#text: false {}
+1748102644.666572 [0] joint_stat: config: Domain/Discovery/Tag/#text:  {}
+1748102644.666575 [0] joint_stat: config: Domain/Discovery/ExternalDomainId/#text: 0 {}
+1748102644.666578 [0] joint_stat: config: Domain/Discovery/DSGracePeriod/#text: 30 s {}
+1748102644.666581 [0] joint_stat: config: Domain/Discovery/Peers/Peer[@Address]: localhost {1}
+1748102644.666584 [0] joint_stat: config: Domain/Discovery/Peers/Peer[@Address]: 50.0.0.159 {1}
+1748102644.666588 [0] joint_stat: config: Domain/Discovery/Peers/Peer[@Address]: 50.0.0.135 {1}
+1748102644.666590 [0] joint_stat: config: Domain/Discovery/ParticipantIndex/#text: none {}
+1748102644.666593 [0] joint_stat: config: Domain/Discovery/MaxAutoParticipantIndex/#text: 9 {}
+1748102644.666596 [0] joint_stat: config: Domain/Discovery/SPDPMulticastAddress/#text: 239.255.0.1 {}
+1748102644.666599 [0] joint_stat: config: Domain/Discovery/SPDPInterval/#text: 30 s {}
+1748102644.666601 [0] joint_stat: config: Domain/Discovery/DefaultMulticastAddress/#text: auto {}
+1748102644.666604 [0] joint_stat: config: Domain/Discovery/Ports/Base/#text: 7400 {}
+1748102644.666607 [0] joint_stat: config: Domain/Discovery/Ports/DomainGain/#text: 250 {}
+1748102644.666610 [0] joint_stat: config: Domain/Discovery/Ports/ParticipantGain/#text: 2 {}
+1748102644.666613 [0] joint_stat: config: Domain/Discovery/Ports/MulticastMetaOffset/#text: 0 {}
+1748102644.666621 [0] joint_stat: config: Domain/Discovery/Ports/UnicastMetaOffset/#text: 10 {}
+1748102644.666624 [0] joint_stat: config: Domain/Discovery/Ports/MulticastDataOffset/#text: 1 {}
+1748102644.666627 [0] joint_stat: config: Domain/Discovery/Ports/UnicastDataOffset/#text: 11 {}
+1748102644.666630 [0] joint_stat: config: Domain/Discovery/EnableTopicDiscoveryEndpoints/#text: true {1}
+1748102644.666633 [0] joint_stat: config: Domain/Discovery/LeaseDuration/#text: 10 s {}
+1748102644.666641 [0] joint_stat: config: Domain/Tracing/Category/#text: fatal,error,warning,info,config {1}
+1748102644.666644 [0] joint_stat: config: Domain/Tracing/OutputFile/#text: cdds.log.87812 {1}
+1748102644.666647 [0] joint_stat: config: Domain/Tracing/AppendToFile/#text: false {}
+1748102644.666650 [0] joint_stat: config: Domain/Tracing/PacketCaptureFile/#text:  {}
+1748102644.666653 [0] joint_stat: config: Domain/Internal/DeliveryQueueMaxSamples/#text: 256 {}
+1748102644.666655 [0] joint_stat: config: Domain/Internal/PrimaryReorderMaxSamples/#text: 128 {}
+1748102644.666658 [0] joint_stat: config: Domain/Internal/SecondaryReorderMaxSamples/#text: 128 {}
+1748102644.666661 [0] joint_stat: config: Domain/Internal/DefragUnreliableMaxSamples/#text: 4 {}
+1748102644.666663 [0] joint_stat: config: Domain/Internal/DefragReliableMaxSamples/#text: 16 {}
+1748102644.666666 [0] joint_stat: config: Domain/Internal/BuiltinEndpointSet/#text: writers {}
+1748102644.666669 [0] joint_stat: config: Domain/Internal/MeasureHbToAckLatency/#text: false {}
+1748102644.666672 [0] joint_stat: config: Domain/Internal/UnicastResponseToSPDPMessages/#text: true {}
+1748102644.666675 [0] joint_stat: config: Domain/Internal/SynchronousDeliveryPriorityThreshold/#text: 0 {}
+1748102644.666678 [0] joint_stat: config: Domain/Internal/SynchronousDeliveryLatencyBound/#text: inf {}
+1748102644.666680 [0] joint_stat: config: Domain/Internal/MaxParticipants/#text: 0 {}
+1748102644.666684 [0] joint_stat: config: Domain/Internal/AccelerateRexmitBlockSize/#text: 0 {}
+1748102644.666687 [0] joint_stat: config: Domain/Internal/RetransmitMerging/#text: never {}
+1748102644.666690 [0] joint_stat: config: Domain/Internal/RetransmitMergingPeriod/#text: 5 ms {}
+1748102644.666693 [0] joint_stat: config: Domain/Internal/HeartbeatInterval/#text: 100 ms {}
+1748102644.666696 [0] joint_stat: config: Domain/Internal/HeartbeatInterval[@min]: 5 ms {}
+1748102644.666699 [0] joint_stat: config: Domain/Internal/HeartbeatInterval[@minsched]: 20 ms {}
+1748102644.666702 [0] joint_stat: config: Domain/Internal/HeartbeatInterval[@max]: 8 s {}
+1748102644.666705 [0] joint_stat: config: Domain/Internal/MaxQueuedRexmitBytes/#text: 512 KiB {}
+1748102644.666708 [0] joint_stat: config: Domain/Internal/MaxQueuedRexmitMessages/#text: 200 {}
+1748102644.666711 [0] joint_stat: config: Domain/Internal/WriterLingerDuration/#text: 1 s {}
+1748102644.666714 [0] joint_stat: config: Domain/Internal/SocketReceiveBufferSize[@min]: default {}
+1748102644.666717 [0] joint_stat: config: Domain/Internal/SocketReceiveBufferSize[@max]: default {}
+1748102644.666720 [0] joint_stat: config: Domain/Internal/SocketSendBufferSize[@min]: 64 KiB {}
+1748102644.666723 [0] joint_stat: config: Domain/Internal/SocketSendBufferSize[@max]: default {}
+1748102644.666726 [0] joint_stat: config: Domain/Internal/NackDelay/#text: 100 ms {}
+1748102644.666728 [0] joint_stat: config: Domain/Internal/AckDelay/#text: 10 ms {}
+1748102644.666731 [0] joint_stat: config: Domain/Internal/AutoReschedNackDelay/#text: 3 s {}
+1748102644.666734 [0] joint_stat: config: Domain/Internal/PreEmptiveAckDelay/#text: 10 ms {}
+1748102644.666737 [0] joint_stat: config: Domain/Internal/ScheduleTimeRounding/#text: 0 s {}
+1748102644.666740 [0] joint_stat: config: Domain/Internal/DDSI2DirectMaxThreads/#text: 1 {}
+1748102644.666743 [0] joint_stat: config: Domain/Internal/SquashParticipants/#text: false {}
+1748102644.666746 [0] joint_stat: config: Domain/Internal/SPDPResponseMaxDelay/#text: 0 s {}
+1748102644.666748 [0] joint_stat: config: Domain/Internal/LateAckMode/#text: false {}
+1748102644.666751 [0] joint_stat: config: Domain/Internal/RetryOnRejectBestEffort/#text: false {}
+1748102644.666756 [0] joint_stat: config: Domain/Internal/GenerateKeyhash/#text: false {}
+1748102644.666759 [0] joint_stat: config: Domain/Internal/MaxSampleSize/#text: 2147483647 B {}
+1748102644.666762 [0] joint_stat: config: Domain/Internal/LivelinessMonitoring/#text: false {}
+1748102644.666765 [0] joint_stat: config: Domain/Internal/LivelinessMonitoring[@StackTraces]: true {}
+1748102644.666768 [0] joint_stat: config: Domain/Internal/LivelinessMonitoring[@Interval]: 1 s {}
+1748102644.666771 [0] joint_stat: config: Domain/Internal/MonitorPort/#text: -1 {}
+1748102644.666774 [0] joint_stat: config: Domain/Internal/PrioritizeRetransmit/#text: true {}
+1748102644.666777 [0] joint_stat: config: Domain/Internal/UseMulticastIfMreqn/#text: 0 {}
+1748102644.666780 [0] joint_stat: config: Domain/Internal/RediscoveryBlacklistDuration/#text: 0 s {}
+1748102644.666783 [0] joint_stat: config: Domain/Internal/RediscoveryBlacklistDuration[@enforce]: false {}
+1748102644.666786 [0] joint_stat: config: Domain/Internal/MultipleReceiveThreads/#text: default {}
+1748102644.666788 [0] joint_stat: config: Domain/Internal/MultipleReceiveThreads[@maxretries]: 4294967295 {}
+1748102644.666792 [0] joint_stat: config: Domain/Internal/Test/XmitLossiness/#text: 0 {}
+1748102644.666795 [0] joint_stat: config: Domain/Internal/Watermarks/WhcLow/#text: 1 KiB {}
+1748102644.666799 [0] joint_stat: config: Domain/Internal/Watermarks/WhcHigh/#text: 500 KiB {1}
+1748102644.666802 [0] joint_stat: config: Domain/Internal/Watermarks/WhcHighInit/#text: 30 KiB {}
+1748102644.666804 [0] joint_stat: config: Domain/Internal/Watermarks/WhcAdaptive/#text: true {}
+1748102644.666808 [0] joint_stat: config: Domain/Internal/BurstSize/MaxRexmit/#text: 1 MiB {}
+1748102644.666811 [0] joint_stat: config: Domain/Internal/BurstSize/MaxInitTransmit/#text: 4294967295 {}
+1748102644.666814 [0] joint_stat: config: Domain/Internal/EnableExpensiveChecks/#text:  {}
+1748102644.666817 [0] joint_stat: config: Domain/TCP/NoDelay/#text: true {}
+1748102644.666820 [0] joint_stat: config: Domain/TCP/Port/#text: -1 {}
+1748102644.666823 [0] joint_stat: config: Domain/TCP/ReadTimeout/#text: 2 s {}
+1748102644.666826 [0] joint_stat: config: Domain/TCP/WriteTimeout/#text: 2 s {}
+1748102644.666828 [0] joint_stat: config: Domain/TCP/AlwaysUsePeeraddrForUnicast/#text: false {}
+1748102644.666831 [0] joint_stat: config: Domain/SSL/Enable/#text: false {}
+1748102644.666834 [0] joint_stat: config: Domain/SSL/CertificateVerification/#text: true {}
+1748102644.666837 [0] joint_stat: config: Domain/SSL/VerifyClient/#text: true {}
+1748102644.666840 [0] joint_stat: config: Domain/SSL/SelfSignedCertificates/#text: false {}
+1748102644.666843 [0] joint_stat: config: Domain/SSL/KeystoreFile/#text: keystore {}
+1748102644.666846 [0] joint_stat: config: Domain/SSL/KeyPassphrase/#text: secret {}
+1748102644.666848 [0] joint_stat: config: Domain/SSL/Ciphers/#text: ALL:!ADH:!LOW:!EXP:!MD5:@STRENGTH {}
+1748102644.666851 [0] joint_stat: config: Domain/SSL/EntropyFile/#text:  {}
+1748102644.666854 [0] joint_stat: config: Domain/SSL/MinimumTLSVersion/#text: 1.3 {}
+1748102644.666857 [0] joint_stat: config: Domain/SharedMemory/Enable/#text: false {}
+1748102644.666859 [0] joint_stat: config: Domain/SharedMemory/Locator/#text:  {}
+1748102644.666862 [0] joint_stat: config: Domain/SharedMemory/Prefix/#text: DDS_CYCLONE {}
+1748102644.666865 [0] joint_stat: config: Domain/SharedMemory/LogLevel/#text: info {}
+1748102644.666868 [0] joint_stat: config: Domain[@Id]: 0 {1}
+1748102644.666886 [0] joint_stat: started at 1748102644.06666874 -- 2025-05-24 19:04:04+03:00
+1748102644.666889 [0] joint_stat: udp initialized
+1748102644.669761 [0] joint_stat: interfaces: lo udp/127.0.0.1(q1) wlo1 wireless udp/192.168.1.173(q9) docker0 udp/172.17.0.1(q9)
+1748102644.669771 [0] joint_stat: determined wlo1 (udp/192.168.1.173) as highest quality interface, selected for automatic interface.
+1748102644.669778 [0] joint_stat: selected interfaces: wlo1 (index 3 priority 0)
+1748102644.669790 [0] joint_stat: ownip: udp/192.168.1.173
+1748102644.669796 [0] joint_stat: extmask: invalid/0 (not applicable)
+1748102644.669798 [0] joint_stat: SPDP MC: udp/239.255.0.1
+1748102644.669800 [0] joint_stat: default MC: udp/239.255.0.1
+1748102644.669801 [0] joint_stat: SSM support included
+1748102644.669972 [0] joint_stat: failed to increase socket receive buffer size to 1048576 bytes, continuing with 425984 bytes
+1748102644.669982 [0] joint_stat: rtps_init: uc ports: disc 0 data 0
+1748102644.669985 [0] joint_stat: rtps_init: domainid 0 participantid -2
+1748102644.669987 [0] joint_stat: Unicast Ports: discovery 36733 data 36733
+1748102644.669992 [0] joint_stat: failed to increase socket receive buffer size to 1048576 bytes, continuing with 425984 bytes
+1748102644.669998 [0] joint_stat: interface wlo1: transmit port 46589
+1748102644.670143 [0] joint_stat: add_peer_addresses: add udp/127.0.0.1:7410, :7412, :7414, :7416, :7418, :7420, :7422, :7424, :7426
+1748102644.670152 [0] joint_stat: add_peer_addresses: add udp/50.0.0.159:7410, :7412, :7414, :7416, :7418, :7420, :7422, :7424, :7426
+1748102644.670162 [0] joint_stat: add_peer_addresses: add udp/50.0.0.135:7410, :7412, :7414, :7416, :7418, :7420, :7422, :7424, :7426
+1748102650.829198 [0] joint_stat: udp finalized
+1748102650.829296 [0] joint_stat: Finis.

@@ -1,0 +1,146 @@
+1748101873.900412 [0] robot_stat: config: Domain/General/MulticastRecvNetworkInterfaceAddresses/#text: preferred {}
+1748101873.900433 [0] robot_stat: config: Domain/General/Interfaces/NetworkInterface[@autodetermine]: true {1}
+1748101873.900438 [0] robot_stat: config: Domain/General/Interfaces/NetworkInterface[@name]:  {}
+1748101873.900441 [0] robot_stat: config: Domain/General/Interfaces/NetworkInterface[@address]:  {}
+1748101873.900444 [0] robot_stat: config: Domain/General/Interfaces/NetworkInterface[@priority]: default {}
+1748101873.900447 [0] robot_stat: config: Domain/General/Interfaces/NetworkInterface[@prefer_multicast]: false {}
+1748101873.900450 [0] robot_stat: config: Domain/General/Interfaces/NetworkInterface[@presence_required]: true {}
+1748101873.900453 [0] robot_stat: config: Domain/General/Interfaces/NetworkInterface[@multicast]: default {}
+1748101873.900456 [0] robot_stat: config: Domain/General/ExternalNetworkAddress/#text: auto {}
+1748101873.900459 [0] robot_stat: config: Domain/General/ExternalNetworkMask/#text: 0.0.0.0 {}
+1748101873.900462 [0] robot_stat: config: Domain/General/AllowMulticast/#text: false {1}
+1748101873.900465 [0] robot_stat: config: Domain/General/MulticastTimeToLive/#text: 32 {}
+1748101873.900468 [0] robot_stat: config: Domain/General/DontRoute/#text: false {}
+1748101873.900471 [0] robot_stat: config: Domain/General/Transport/#text: udp {}
+1748101873.900474 [0] robot_stat: config: Domain/General/EnableMulticastLoopback/#text: false {1}
+1748101873.900477 [0] robot_stat: config: Domain/General/MaxMessageSize/#text: 65500 B {1}
+1748101873.900480 [0] robot_stat: config: Domain/General/MaxRexmitMessageSize/#text: 1456 B {}
+1748101873.900483 [0] robot_stat: config: Domain/General/FragmentSize/#text: 1344 B {}
+1748101873.900485 [0] robot_stat: config: Domain/General/RedundantNetworking/#text: false {}
+1748101873.900488 [0] robot_stat: config: Domain/General/EntityAutoNaming/#text: empty {}
+1748101873.900492 [0] robot_stat: config: Domain/General/EntityAutoNaming[@seed]: 1619211634 909872420 3208759226 448018836 1371516454 1322977484 2646385680 499719275 {}
+1748101873.900496 [0] robot_stat: config: Domain/Sizing/ReceiveBufferSize/#text: 1 MiB {}
+1748101873.900499 [0] robot_stat: config: Domain/Sizing/ReceiveBufferChunkSize/#text: 128 KiB {}
+1748101873.900502 [0] robot_stat: config: Domain/Compatibility/StandardsConformance/#text: lax {}
+1748101873.900505 [0] robot_stat: config: Domain/Compatibility/ExplicitlyPublishQosSetToDefault/#text: false {}
+1748101873.900508 [0] robot_stat: config: Domain/Compatibility/ManySocketsMode/#text: single {}
+1748101873.900510 [0] robot_stat: config: Domain/Compatibility/AssumeRtiHasPmdEndpoints/#text: false {}
+1748101873.900513 [0] robot_stat: config: Domain/Discovery/Tag/#text:  {}
+1748101873.900516 [0] robot_stat: config: Domain/Discovery/ExternalDomainId/#text: 0 {}
+1748101873.900519 [0] robot_stat: config: Domain/Discovery/DSGracePeriod/#text: 30 s {}
+1748101873.900523 [0] robot_stat: config: Domain/Discovery/Peers/Peer[@Address]: 50.0.0.111 {1}
+1748101873.900526 [0] robot_stat: config: Domain/Discovery/Peers/Peer[@Address]: 50.0.0.159 {1}
+1748101873.900529 [0] robot_stat: config: Domain/Discovery/Peers/Peer[@Address]: 50.0.0.135 {1}
+1748101873.900532 [0] robot_stat: config: Domain/Discovery/ParticipantIndex/#text: none {}
+1748101873.900535 [0] robot_stat: config: Domain/Discovery/MaxAutoParticipantIndex/#text: 9 {}
+1748101873.900537 [0] robot_stat: config: Domain/Discovery/SPDPMulticastAddress/#text: 239.255.0.1 {}
+1748101873.900540 [0] robot_stat: config: Domain/Discovery/SPDPInterval/#text: 30 s {}
+1748101873.900543 [0] robot_stat: config: Domain/Discovery/DefaultMulticastAddress/#text: auto {}
+1748101873.900546 [0] robot_stat: config: Domain/Discovery/Ports/Base/#text: 7400 {}
+1748101873.900549 [0] robot_stat: config: Domain/Discovery/Ports/DomainGain/#text: 250 {}
+1748101873.900552 [0] robot_stat: config: Domain/Discovery/Ports/ParticipantGain/#text: 2 {}
+1748101873.900555 [0] robot_stat: config: Domain/Discovery/Ports/MulticastMetaOffset/#text: 0 {}
+1748101873.900561 [0] robot_stat: config: Domain/Discovery/Ports/UnicastMetaOffset/#text: 10 {}
+1748101873.900564 [0] robot_stat: config: Domain/Discovery/Ports/MulticastDataOffset/#text: 1 {}
+1748101873.900567 [0] robot_stat: config: Domain/Discovery/Ports/UnicastDataOffset/#text: 11 {}
+1748101873.900570 [0] robot_stat: config: Domain/Discovery/EnableTopicDiscoveryEndpoints/#text: true {1}
+1748101873.900573 [0] robot_stat: config: Domain/Discovery/LeaseDuration/#text: 10 s {}
+1748101873.900581 [0] robot_stat: config: Domain/Tracing/Category/#text: fatal,error,warning,info,config {1}
+1748101873.900584 [0] robot_stat: config: Domain/Tracing/OutputFile/#text: cdds.log.80779 {1}
+1748101873.900587 [0] robot_stat: config: Domain/Tracing/AppendToFile/#text: false {}
+1748101873.900590 [0] robot_stat: config: Domain/Tracing/PacketCaptureFile/#text:  {}
+1748101873.900593 [0] robot_stat: config: Domain/Internal/DeliveryQueueMaxSamples/#text: 256 {}
+1748101873.900596 [0] robot_stat: config: Domain/Internal/PrimaryReorderMaxSamples/#text: 128 {}
+1748101873.900598 [0] robot_stat: config: Domain/Internal/SecondaryReorderMaxSamples/#text: 128 {}
+1748101873.900601 [0] robot_stat: config: Domain/Internal/DefragUnreliableMaxSamples/#text: 4 {}
+1748101873.900604 [0] robot_stat: config: Domain/Internal/DefragReliableMaxSamples/#text: 16 {}
+1748101873.900607 [0] robot_stat: config: Domain/Internal/BuiltinEndpointSet/#text: writers {}
+1748101873.900609 [0] robot_stat: config: Domain/Internal/MeasureHbToAckLatency/#text: false {}
+1748101873.900612 [0] robot_stat: config: Domain/Internal/UnicastResponseToSPDPMessages/#text: true {}
+1748101873.900615 [0] robot_stat: config: Domain/Internal/SynchronousDeliveryPriorityThreshold/#text: 0 {}
+1748101873.900618 [0] robot_stat: config: Domain/Internal/SynchronousDeliveryLatencyBound/#text: inf {}
+1748101873.900620 [0] robot_stat: config: Domain/Internal/MaxParticipants/#text: 0 {}
+1748101873.900623 [0] robot_stat: config: Domain/Internal/AccelerateRexmitBlockSize/#text: 0 {}
+1748101873.900626 [0] robot_stat: config: Domain/Internal/RetransmitMerging/#text: never {}
+1748101873.900629 [0] robot_stat: config: Domain/Internal/RetransmitMergingPeriod/#text: 5 ms {}
+1748101873.900632 [0] robot_stat: config: Domain/Internal/HeartbeatInterval/#text: 100 ms {}
+1748101873.900635 [0] robot_stat: config: Domain/Internal/HeartbeatInterval[@min]: 5 ms {}
+1748101873.900638 [0] robot_stat: config: Domain/Internal/HeartbeatInterval[@minsched]: 20 ms {}
+1748101873.900641 [0] robot_stat: config: Domain/Internal/HeartbeatInterval[@max]: 8 s {}
+1748101873.900644 [0] robot_stat: config: Domain/Internal/MaxQueuedRexmitBytes/#text: 512 KiB {}
+1748101873.900647 [0] robot_stat: config: Domain/Internal/MaxQueuedRexmitMessages/#text: 200 {}
+1748101873.900650 [0] robot_stat: config: Domain/Internal/WriterLingerDuration/#text: 1 s {}
+1748101873.900653 [0] robot_stat: config: Domain/Internal/SocketReceiveBufferSize[@min]: default {}
+1748101873.900656 [0] robot_stat: config: Domain/Internal/SocketReceiveBufferSize[@max]: default {}
+1748101873.900659 [0] robot_stat: config: Domain/Internal/SocketSendBufferSize[@min]: 64 KiB {}
+1748101873.900662 [0] robot_stat: config: Domain/Internal/SocketSendBufferSize[@max]: default {}
+1748101873.900664 [0] robot_stat: config: Domain/Internal/NackDelay/#text: 100 ms {}
+1748101873.900667 [0] robot_stat: config: Domain/Internal/AckDelay/#text: 10 ms {}
+1748101873.900670 [0] robot_stat: config: Domain/Internal/AutoReschedNackDelay/#text: 3 s {}
+1748101873.900673 [0] robot_stat: config: Domain/Internal/PreEmptiveAckDelay/#text: 10 ms {}
+1748101873.900676 [0] robot_stat: config: Domain/Internal/ScheduleTimeRounding/#text: 0 s {}
+1748101873.900679 [0] robot_stat: config: Domain/Internal/DDSI2DirectMaxThreads/#text: 1 {}
+1748101873.900681 [0] robot_stat: config: Domain/Internal/SquashParticipants/#text: false {}
+1748101873.900684 [0] robot_stat: config: Domain/Internal/SPDPResponseMaxDelay/#text: 0 s {}
+1748101873.900687 [0] robot_stat: config: Domain/Internal/LateAckMode/#text: false {}
+1748101873.900690 [0] robot_stat: config: Domain/Internal/RetryOnRejectBestEffort/#text: false {}
+1748101873.900695 [0] robot_stat: config: Domain/Internal/GenerateKeyhash/#text: false {}
+1748101873.900698 [0] robot_stat: config: Domain/Internal/MaxSampleSize/#text: 2147483647 B {}
+1748101873.900701 [0] robot_stat: config: Domain/Internal/LivelinessMonitoring/#text: false {}
+1748101873.900703 [0] robot_stat: config: Domain/Internal/LivelinessMonitoring[@StackTraces]: true {}
+1748101873.900706 [0] robot_stat: config: Domain/Internal/LivelinessMonitoring[@Interval]: 1 s {}
+1748101873.900709 [0] robot_stat: config: Domain/Internal/MonitorPort/#text: -1 {}
+1748101873.900712 [0] robot_stat: config: Domain/Internal/PrioritizeRetransmit/#text: true {}
+1748101873.900715 [0] robot_stat: config: Domain/Internal/UseMulticastIfMreqn/#text: 0 {}
+1748101873.900718 [0] robot_stat: config: Domain/Internal/RediscoveryBlacklistDuration/#text: 0 s {}
+1748101873.900720 [0] robot_stat: config: Domain/Internal/RediscoveryBlacklistDuration[@enforce]: false {}
+1748101873.900723 [0] robot_stat: config: Domain/Internal/MultipleReceiveThreads/#text: default {}
+1748101873.900726 [0] robot_stat: config: Domain/Internal/MultipleReceiveThreads[@maxretries]: 4294967295 {}
+1748101873.900730 [0] robot_stat: config: Domain/Internal/Test/XmitLossiness/#text: 0 {}
+1748101873.900733 [0] robot_stat: config: Domain/Internal/Watermarks/WhcLow/#text: 1 KiB {}
+1748101873.900736 [0] robot_stat: config: Domain/Internal/Watermarks/WhcHigh/#text: 500 KiB {1}
+1748101873.900739 [0] robot_stat: config: Domain/Internal/Watermarks/WhcHighInit/#text: 30 KiB {}
+1748101873.900742 [0] robot_stat: config: Domain/Internal/Watermarks/WhcAdaptive/#text: true {}
+1748101873.900745 [0] robot_stat: config: Domain/Internal/BurstSize/MaxRexmit/#text: 1 MiB {}
+1748101873.900748 [0] robot_stat: config: Domain/Internal/BurstSize/MaxInitTransmit/#text: 4294967295 {}
+1748101873.900750 [0] robot_stat: config: Domain/Internal/EnableExpensiveChecks/#text:  {}
+1748101873.900754 [0] robot_stat: config: Domain/TCP/NoDelay/#text: true {}
+1748101873.900756 [0] robot_stat: config: Domain/TCP/Port/#text: -1 {}
+1748101873.900759 [0] robot_stat: config: Domain/TCP/ReadTimeout/#text: 2 s {}
+1748101873.900762 [0] robot_stat: config: Domain/TCP/WriteTimeout/#text: 2 s {}
+1748101873.900765 [0] robot_stat: config: Domain/TCP/AlwaysUsePeeraddrForUnicast/#text: false {}
+1748101873.900768 [0] robot_stat: config: Domain/SSL/Enable/#text: false {}
+1748101873.900771 [0] robot_stat: config: Domain/SSL/CertificateVerification/#text: true {}
+1748101873.900774 [0] robot_stat: config: Domain/SSL/VerifyClient/#text: true {}
+1748101873.900777 [0] robot_stat: config: Domain/SSL/SelfSignedCertificates/#text: false {}
+1748101873.900779 [0] robot_stat: config: Domain/SSL/KeystoreFile/#text: keystore {}
+1748101873.900782 [0] robot_stat: config: Domain/SSL/KeyPassphrase/#text: secret {}
+1748101873.900785 [0] robot_stat: config: Domain/SSL/Ciphers/#text: ALL:!ADH:!LOW:!EXP:!MD5:@STRENGTH {}
+1748101873.900788 [0] robot_stat: config: Domain/SSL/EntropyFile/#text:  {}
+1748101873.900791 [0] robot_stat: config: Domain/SSL/MinimumTLSVersion/#text: 1.3 {}
+1748101873.900794 [0] robot_stat: config: Domain/SharedMemory/Enable/#text: false {}
+1748101873.900796 [0] robot_stat: config: Domain/SharedMemory/Locator/#text:  {}
+1748101873.900799 [0] robot_stat: config: Domain/SharedMemory/Prefix/#text: DDS_CYCLONE {}
+1748101873.900802 [0] robot_stat: config: Domain/SharedMemory/LogLevel/#text: info {}
+1748101873.900805 [0] robot_stat: config: Domain[@Id]: 0 {1}
+1748101873.900838 [0] robot_stat: started at 1748101873.06900811 -- 2025-05-24 18:51:13+03:00
+1748101873.900842 [0] robot_stat: udp initialized
+1748101873.914375 [0] robot_stat: interfaces: lo udp/127.0.0.1(q1) wlo1 wireless udp/192.168.1.173(q9) docker0 udp/172.17.0.1(q9)
+1748101873.914426 [0] robot_stat: determined wlo1 (udp/192.168.1.173) as highest quality interface, selected for automatic interface.
+1748101873.914439 [0] robot_stat: selected interfaces: wlo1 (index 3 priority 0)
+1748101873.914471 [0] robot_stat: ownip: udp/192.168.1.173
+1748101873.914506 [0] robot_stat: extmask: invalid/0 (not applicable)
+1748101873.914510 [0] robot_stat: SPDP MC: udp/239.255.0.1
+1748101873.914513 [0] robot_stat: default MC: udp/239.255.0.1
+1748101873.914516 [0] robot_stat: SSM support included
+1748101873.914746 [0] robot_stat: failed to increase socket receive buffer size to 1048576 bytes, continuing with 425984 bytes
+1748101873.914765 [0] robot_stat: rtps_init: uc ports: disc 0 data 0
+1748101873.914770 [0] robot_stat: rtps_init: domainid 0 participantid -2
+1748101873.914774 [0] robot_stat: Unicast Ports: discovery 53429 data 53429
+1748101873.914798 [0] robot_stat: failed to increase socket receive buffer size to 1048576 bytes, continuing with 425984 bytes
+1748101873.914807 [0] robot_stat: interface wlo1: transmit port 60113
+1748101873.914829 [0] robot_stat: add_peer_addresses: add udp/50.0.0.111:7410, :7412, :7414, :7416, :7418, :7420, :7422, :7424, :7426
+1748101873.914840 [0] robot_stat: add_peer_addresses: add udp/50.0.0.159:7410, :7412, :7414, :7416, :7418, :7420, :7422, :7424, :7426
+1748101873.914850 [0] robot_stat: add_peer_addresses: add udp/50.0.0.135:7410, :7412, :7414, :7416, :7418, :7420, :7422, :7424, :7426
+1748101882.707107 [0] robot_stat: udp finalized
+1748101882.707180 [0] robot_stat: Finis.
