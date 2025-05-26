@@ -2,9 +2,9 @@
 <sdf version="1.6">
   <world name="depot">
 <physics type="ode">
-    <max_step_size>0.01</max_step_size>
+    <max_step_size>0.0001</max_step_size>
     <real_time_factor>1.0</real_time_factor>
-    <real_time_update_rate>1000</real_time_update_rate>
+    <real_time_update_rate>10000</real_time_update_rate>
     </physics>
     <render_engine>ogre2</render_engine>
     <!-- <plugin name='gz::sim::systems::JointController' filename='gz-sim-joint-controller-system'/> -->
