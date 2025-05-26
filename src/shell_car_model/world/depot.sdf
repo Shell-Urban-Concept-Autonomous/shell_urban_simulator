@@ -4,17 +4,17 @@
 <physics type="bullet">
     <max_step_size>0.001</max_step_size>
     <real_time_factor>1.0</real_time_factor>
-    <real_time_update_rate>500</real_time_update_rate>
+    <real_time_update_rate>1000</real_time_update_rate>
     </physics>
     <render_engine>ogre2</render_engine>
     <!-- <plugin name='gz::sim::systems::JointController' filename='gz-sim-joint-controller-system'/> -->
-    <plugin name='gz::sim::systems::Physics' filename='gz-sim-physics-system'/>
-    <plugin name='gz::sim::systems::UserCommands' filename='gz-sim-user-commands-system'/>
-    <plugin name='gz::sim::systems::SceneBroadcaster' filename='gz-sim-scene-broadcaster-system'/>
-    <plugin name='gz::sim::systems::Contact' filename='gz-sim-contact-system'/>
-    <plugin name='gz::sim::systems::Imu' filename='gz-sim-imu-system'/>
-    <plugin name='gz::sim::systems::AirPressure' filename='gz-sim-air-pressure-system'/>
-    <plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors">
+    <plugin name='ignition::gazebo::systems::Physics' filename='ignition-gazebo-physics-system'/>
+    <plugin name='ignition::gazebo::systems::UserCommands' filename='ignition-gazebo-user-commands-system'/>
+    <plugin name='ignition::gazebo::systems::SceneBroadcaster' filename='ignition-gazebo-scene-broadcaster-system'/>
+    <plugin name='ignition::gazebo::systems::Contact' filename='ignition-gazebo-contact-system'/>
+    <plugin name='ignition::gazebo::systems::Imu' filename='ignition-gazebo-imu-system'/>
+    <plugin name='ignition::gazebo::systems::AirPressure' filename='ignition-gazebo-air-pressure-system'/>
+    <plugin filename="ignition-gazebo-sensors-system" name="ignition::gazebo::systems::Sensors">
       <render_engine>ogre2</render_engine>
     </plugin>
 

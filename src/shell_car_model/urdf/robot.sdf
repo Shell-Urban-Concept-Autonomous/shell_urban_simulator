@@ -938,7 +938,7 @@
 
     <plugin
       filename="ignition-gazebo-ackermann-steering-system"
-      name="gz::sim::systems::AckermannSteering">
+      name="ignition::gazebo::systems::AckermannSteering">
       <steer_p_gain>10.0</steer_p_gain>
       <left_joint>motorized_joint</left_joint>
       <right_joint>rl_wheel_free_joint</right_joint>
@@ -956,7 +956,7 @@
       <topic>/cmd_vel</topic>
     </plugin>
 
-    <plugin filename="ignition-gazebo-joint-state-publisher-system" name="gz::sim::systems::JointStatePublisher">
+    <plugin filename="ignition-gazebo-joint-state-publisher-system" name="ignition::gazebo::systems::JointStatePublisher">
       <joint_name>fl_steering_joint</joint_name>
       <joint_name>fr_steering_joint</joint_name>
       <joint_name>motorized_joint</joint_name>
