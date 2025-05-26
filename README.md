@@ -102,16 +102,16 @@ cd docker
 # Topics
 
 ## Vehicle Control Topics
-<div align="center">
+<center>
 
 | **Topic** | **Description** | **Message Type** | **Dir** | **Hz** | **Role** |
 |-----------|-----------------|------------------|---------|--------|----------|
 | `/cmd_vel` | Velocity & steering commands | `geometry_msgs/Twist` | ROS→GZ | - | Vehicle control |
 
-</div>
+</center>
 
 ## Sensor Topics
-<div align="center">
+<center>
 
 | **Topic** | **Description** | **Message Type** | **Dir** | **Hz** | **Role** |
 |-----------|-----------------|------------------|---------|--------|----------|
@@ -119,10 +119,10 @@ cd docker
 | `/imu` | IMU data | `sensor_msgs/Imu` | GZ→ROS | 400 | Acceleration & orientation |
 | `/scan/points` | LiDAR point cloud | `sensor_msgs/PointCloud2` | GZ→ROS | 10 | 3D perception |
 
-</div>
+</center>
 
 ## Camera Topics (ZED)
-<div align="center">
+<center>
 
 | **Topic** | **Description** | **Message Type** | **Dir** | **Hz** | **Role** |
 |-----------|-----------------|------------------|---------|--------|----------|
@@ -131,10 +131,10 @@ cd docker
 | `camera/pointcloud` | Camera point cloud | `sensor_msgs/PointCloud2` | GZ→ROS | 30 | 3D visual data |
 | `camera/camera_info` | Camera calibration | `sensor_msgs/CameraInfo` | GZ→ROS | 30 | Camera parameters |
 
-</div>
+</center>
 
 ## System Topics
-<div align="center">
+<center>
 
 | **Topic** | **Description** | **Message Type** | **Dir** | **Hz** | **Role** |
 |-----------|-----------------|------------------|---------|--------|----------|
@@ -142,7 +142,7 @@ cd docker
 | `/tf` | Transform tree | `tf2_msgs/TFMessage` | GZ→ROS | 30 | Coordinate frames |
 | `clock` | Simulation time | `rosgraph_msgs/Clock` | GZ→ROS | - | Time sync |
 
-</div>
+</center>
 
 ## Hardware Specifications
 - **Vehicle Model**: Shell Racing Car with Ackermann steering
@@ -154,7 +154,7 @@ cd docker
 ## Vehicle Specifications
 
 ### Physical Dimensions
-<div align="center">
+<center>
 
 | **Parameter** | **Value** | **Unit** | **Description** |
 |---------------|-----------|----------|-----------------|
@@ -164,10 +164,10 @@ cd docker
 | **Wheel Diameter** | 1.2 | m | All wheels diameter |
 | **Overall L×W** | ~2.4×1.0 | m | Estimated dimensions |
 
-</div>
+</center>
 
 ### Mass Properties
-<div align="center">
+<center>
 
 | **Component** | **Mass (kg)** | **Description** |
 |---------------|---------------|-----------------|
@@ -181,10 +181,10 @@ cd docker
 | **Velodyne LiDAR** | 0.696 | LiDAR sensor unit |
 | **ZED Camera** | 0.170 | Stereo camera unit |
 
-</div>
+</center>
 
 ### Performance Characteristics
-<div align="center">
+<center>
 
 | **Parameter** | **Value** | **Unit** | **Description** |
 |---------------|-----------|----------|-----------------|
@@ -193,10 +193,10 @@ cd docker
 | **Steering Limit** | ±20.0° | degrees | Max steering angle |
 | **Steering P-Gain** | 10.0 | - | Control proportional gain |
 
-</div>
+</center>
 
 ### Drivetrain & Sensors
-<div align="center">
+<center>
 
 | **Parameter** | **Value/Type** | **Specifications** |
 |---------------|----------------|-------------------|
@@ -207,7 +207,7 @@ cd docker
 | **IMU** | 6-DOF | 400Hz, base_link mounted |
 | **Odometry** | Wheel-based | 30Hz pose estimation |
 
-</div>
+</center>
 
 # ScreenShots for inside the simulator
 
