@@ -1,6 +1,6 @@
 <p align="center">
   <img width=300 src="https://github.com/user-attachments/assets/711ffbca-01dc-4ad6-af79-e4d849f745fb" />
-  <img width=150 src="https://github.com/ebrahimabdelghfar/EVER_Simulator/assets/81301684/701fb094-edd0-4d97-a3be-eca381d8a3c2" />
+   <img width=150 src="https://github.com/ebrahimabdelghfar/EVER_Simulator/assets/81301684/701fb094-edd0-4d97-a3be-eca381d8a3c2" />
 </p>
 
 
@@ -187,15 +187,8 @@ cd docker
 | **IMU**                       | 6-DOF              | 400Hz update rate, base_link mounted  |
 | **Odometry**                  | Wheel-based        | 30Hz pose estimation                  |
 
-### Control Interface
-| **Parameter**                 | **Topic**          | **Message Type**     | **Description**       |
-|-------------------------------|--------------------:|----------------------|----------------------|
-| **Velocity Commands**         | `/cmd_vel`         | `geometry_msgs/Twist`| Linear and angular velocity control |
-| **Joint States**              | `/joint_states`    | `sensor_msgs/JointState` | Real-time joint positions and velocities |
-| **Odometry Feedback**         | `/odom`            | `nav_msgs/Odometry`  | Vehicle pose and velocity estimates |
-
-
 # ScreenShots for inside the simulator
+
 <p align="center">
 <img width=550 src="https://github.com/user-attachments/assets/d921d96f-3791-4cd0-a4f2-da0ea6791c79"/>
 <img width=400 src="https://github.com/user-attachments/assets/8922baa7-994c-4479-b748-e71367361601"/>
