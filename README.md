@@ -137,4 +137,7 @@ cd docker
 
 
 # ScreenShots for inside the simulator
-![WhatsApp Image 2025-04-05 at 14 58 56_ec690ff4](https://github.com/user-attachments/assets/bea6d0bd-d3c1-449c-b264-846c0f62fdb5)
+
+![Screenshot from 2025-05-26 14-32-31](https://github.com/user-attachments/assets/d921d96f-3791-4cd0-a4f2-da0ea6791c79)
+![Screenshot from 2025-05-26 14-32-14](https://github.com/user-attachments/assets/8922baa7-994c-4479-b748-e71367361601)
+![Screenshot from 2025-05-26 14-12-21](https://github.com/user-attachments/assets/1e725a4c-de1d-4a09-988a-e5392b8547b4)
