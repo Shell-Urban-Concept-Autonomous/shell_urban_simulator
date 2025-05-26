@@ -135,6 +135,65 @@ cd docker
 - **IMU**: High-frequency inertial measurement unit
 - **Wheels**: 4-wheel configuration with front steering and rear-wheel drive
 
+## Vehicle Specifications
+
+### Physical Dimensions
+| **Parameter**                 | **Value**          | **Unit** | **Description**                       |
+|-------------------------------|--------------------|---------:|---------------------------------------|
+| **Wheelbase**                 | 1.8                | m        | Distance between front and rear axles |
+| **Track Width (Front)**       | 0.816              | m        | Distance between front wheel centers  |
+| **Track Width (Rear)**        | 0.901              | m        | Distance between rear wheel centers   |
+| **Wheel Radius**              | 0.6                | m        | Radius of all wheels                  |
+| **Wheel Diameter**            | 1.2                | m        | Diameter of all wheels                |
+| **Overall Length**            | ~2.4               | m        | Estimated vehicle length              |
+| **Overall Width**             | ~1.0               | m        | Estimated vehicle width               |
+
+### Mass Properties
+| **Component**                 | **Mass**           | **Unit** | **Description**                       |
+|-------------------------------|--------------------|---------:|---------------------------------------|
+| **Total Vehicle Mass**        | ~110               | kg       | Estimated total vehicle mass          |
+| **Chassis**                   | 19.425             | kg       | Main vehicle chassis                  |
+| **Body**                      | 11.145             | kg       | Vehicle body structure                |
+| **Drive Motor + Wheel**       | 13.706             | kg       | Rear-left motorized wheel assembly   |
+| **Front Wheels (each)**       | 2.747              | kg       | Front wheel mass (left/right)        |
+| **Rear Wheel (passive)**      | 2.792              | kg       | Rear-right passive wheel             |
+| **Roof Assembly**             | 1.407              | kg       | Roof structure                        |
+| **Velodyne LiDAR**            | 0.696              | kg       | LiDAR sensor unit                     |
+| **ZED Camera**                | 0.170              | kg       | Stereo camera unit                    |
+
+### Performance Characteristics
+| **Parameter**                 | **Value**          | **Unit** | **Description**                       |
+|-------------------------------|--------------------|---------:|---------------------------------------|
+| **Maximum Speed**             | 4.17               | m/s      | Maximum forward/reverse velocity      |
+| **Maximum Speed**             | 15.0               | km/h     | Maximum speed in km/h                 |
+| **Maximum Acceleration**      | 3.0                | m/s²     | Maximum acceleration/deceleration     |
+| **Steering Angle Limit**     | ±20.0              | degrees  | Maximum steering angle (±0.349 rad)   |
+| **Steering P-Gain**          | 10.0               | -        | Steering control proportional gain    |
+
+### Drivetrain Specifications
+| **Parameter**                 | **Value**          | **Description**                       |
+|-------------------------------|--------------------:|---------------------------------------|
+| **Drive Type**                | RWD                | Rear-wheel drive (left wheel powered) |
+| **Steering Type**             | Ackermann          | Ackermann steering geometry           |
+| **Powered Wheels**            | 1                  | Left rear wheel (motorized_joint)     |
+| **Steered Wheels**            | 2                  | Both front wheels                     |
+| **Free Wheels**               | 1                  | Right rear wheel (passive)            |
+
+### Sensor Specifications
+| **Sensor**                    | **Model/Type**     | **Key Specifications**                |
+|-------------------------------|--------------------|---------------------------------------|
+| **LiDAR**                     | Velodyne-style     | 32 layers, 10K samples, 200m range   |
+| **Camera**                    | ZED Stereo         | 2560×720, 110° FOV, 30Hz RGB+Depth   |
+| **IMU**                       | 6-DOF              | 400Hz update rate, base_link mounted  |
+| **Odometry**                  | Wheel-based        | 30Hz pose estimation                  |
+
+### Control Interface
+| **Parameter**                 | **Topic**          | **Message Type**     | **Description**       |
+|-------------------------------|--------------------:|----------------------|----------------------|
+| **Velocity Commands**         | `/cmd_vel`         | `geometry_msgs/Twist`| Linear and angular velocity control |
+| **Joint States**              | `/joint_states`    | `sensor_msgs/JointState` | Real-time joint positions and velocities |
+| **Odometry Feedback**         | `/odom`            | `nav_msgs/Odometry`  | Vehicle pose and velocity estimates |
+
 
 # ScreenShots for inside the simulator
 <p align="center">
