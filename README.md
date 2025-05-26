@@ -212,6 +212,6 @@ cd docker
 # ScreenShots for inside the simulator
 
 <p align="center">
-<img width=550 src="https://github.com/user-attachments/assets/d921d96f-3791-4cd0-a4f2-da0ea6791c79"/>
-<img width=400 src="https://github.com/user-attachments/assets/8922baa7-994c-4479-b748-e71367361601"/>
+<img width=600 src="https://github.com/user-attachments/assets/a85443a4-060b-4343-af05-7bcb578cb165"/>
+<img width=400 src="https://github.com/user-attachments/assets/dac5b400-0438-436f-944f-90e7e01d2b34"/>
 </p>
