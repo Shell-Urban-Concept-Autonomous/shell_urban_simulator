@@ -1,6 +1,6 @@
 <p align="center">
   <img width=300 src="https://github.com/user-attachments/assets/711ffbca-01dc-4ad6-af79-e4d849f745fb" />
-   <img width=150 src="https://github.com/ebrahimabdelghfar/EVER_Simulator/assets/81301684/701fb094-edd0-4d97-a3be-eca381d8a3c2" />
+  <img width=150 src="https://github.com/ebrahimabdelghfar/EVER_Simulator/assets/81301684/701fb094-edd0-4d97-a3be-eca381d8a3c2" />
 </p>
 
 
@@ -137,7 +137,7 @@ cd docker
 
 
 # ScreenShots for inside the simulator
-
-![Screenshot from 2025-05-26 14-32-31](https://github.com/user-attachments/assets/d921d96f-3791-4cd0-a4f2-da0ea6791c79)
-![Screenshot from 2025-05-26 14-32-14](https://github.com/user-attachments/assets/8922baa7-994c-4479-b748-e71367361601)
-![Screenshot from 2025-05-26 14-12-21](https://github.com/user-attachments/assets/1e725a4c-de1d-4a09-988a-e5392b8547b4)
+<p align="center">
+<img width=550 src="https://github.com/user-attachments/assets/d921d96f-3791-4cd0-a4f2-da0ea6791c79"/>
+<img width=400 src="https://github.com/user-attachments/assets/8922baa7-994c-4479-b748-e71367361601"/>
+</p>
