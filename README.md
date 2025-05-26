@@ -96,15 +96,44 @@ sudo nvidia-ctk config --set nvidia-container-cli.no-cgroups --in-place
 2. run the docker container
 ```bash
 cd docker
-docker compose up
+./run_simulator.sh
 ```
 
 # Topics
-| **Topic Name**       | **Description**                     | **Message Type**               | **Direction**    | **Role**                              |
-|-----------------------|-------------------------------------|---------------------------------|------------------|---------------------------------------|
-| `/cmd`               | Publishes car linear velocity in km/h           | `std_msgs/msg/Float32`      | coppeliasim → ROS     | publish linear velocity commands          |
-| `/steering_wheel_cmd`| Publishes steering wheel command in degree   | `std_msgs/msg/Float32`       | coppeliasim → ROS     | publish steering wheel commands        |
-| `/odom`              | publish global postion of the cog of the car           | `geometry_msgs/msg/Pose`    | coppeliasim → ROS     | Provide global postion of the car      |
+
+## Vehicle Control Topics
+| **Topic Name**       | **Description**                                   | **Message Type**               | **Direction**    | **Rate (Hz)** | **Role**                              |
+|-----------------------|---------------------------------------------------|--------------------------------|------------------|---------------|---------------------------------------|
+| `/cmd_vel`           | Vehicle velocity and steering commands            | `geometry_msgs/msg/Twist`      | ROS → Gazebo     | -             | Control vehicle movement and steering |
+
+## Sensor Topics
+| **Topic Name**                | **Description**                        | **Message Type**               | **Direction**    | **Rate (Hz)** | **Role**                              |
+|-------------------------------|----------------------------------------|--------------------------------|------------------|---------------|---------------------------------------|
+| `/odom`                      | Vehicle odometry (position & velocity) | `nav_msgs/msg/Odometry`        | Gazebo → ROS     | 30            | Provide vehicle pose and velocity     |
+| `/imu`                       | Inertial Measurement Unit data         | `sensor_msgs/msg/Imu`          | Gazebo → ROS     | 400           | Provide acceleration and orientation  |
+| `/scan/points`               | LiDAR point cloud data                 | `sensor_msgs/msg/PointCloud2`  | Gazebo → ROS     | 10            | 3D environment perception             |
+
+## Camera Topics (ZED Camera)
+| **Topic Name**                | **Description**                        | **Message Type**               | **Direction**    | **Rate (Hz)** | **Role**                              |
+|-------------------------------|----------------------------------------|--------------------------------|------------------|---------------|---------------------------------------|
+| `camera/rgb/image`           | RGB camera image                       | `sensor_msgs/msg/Image`        | Gazebo → ROS     | 30            | Visual perception                     |
+| `camera/depth/image`         | Depth camera image                     | `sensor_msgs/msg/Image`        | Gazebo → ROS     | 30            | Depth perception                      |
+| `camera/pointcloud`          | Camera-based point cloud               | `sensor_msgs/msg/PointCloud2`  | Gazebo → ROS     | 30            | 3D visual perception                  |
+| `camera/camera_info`         | Camera calibration information         | `sensor_msgs/msg/CameraInfo`   | Gazebo → ROS     | 30            | Camera parameters and calibration    |
+
+## System Topics
+| **Topic Name**                | **Description**                        | **Message Type**               | **Direction**    | **Rate (Hz)** | **Role**                              |
+|-------------------------------|----------------------------------------|--------------------------------|------------------|---------------|---------------------------------------|
+| `/joint_states`              | Vehicle joint positions and velocities | `sensor_msgs/msg/JointState`   | Gazebo → ROS     | 100           | Monitor vehicle joint states          |
+| `/tf`                        | Transform tree                         | `tf2_msgs/msg/TFMessage`       | Gazebo → ROS     | 30            | Coordinate frame relationships        |
+| `clock`                      | Simulation time                        | `rosgraph_msgs/msg/Clock`      | Gazebo → ROS     | -             | Synchronize simulation time           |
+
+## Hardware Specifications
+- **Vehicle Model**: Shell Racing Car with Ackermann steering
+- **LiDAR**: Velodyne-style sensor (32 layers, 10,000 samples per scan, 200m range)
+- **Camera**: ZED stereo camera (2560x720 resolution, 110° FOV)
+- **IMU**: High-frequency inertial measurement unit
+- **Wheels**: 4-wheel configuration with front steering and rear-wheel drive
 
 
 # ScreenShots for inside the simulator
