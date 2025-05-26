@@ -104,32 +104,32 @@ cd docker
 ## Vehicle Control Topics
 <center>
 
-| **Topic** | **Description** | **Message Type** | **Dir** | **Hz** | **Role** |
-|-----------|-----------------|------------------|---------|--------|----------|
-| `/cmd_vel` | Velocity & steering commands | `geometry_msgs/Twist` | ROS→GZ | - | Vehicle control |
+  | **Topic** | **Description** | **Message Type** | **Dir** | **Hz** | **Role** |
+  |-----------|-----------------|------------------|---------|--------|----------|
+  | `/cmd_vel` | Velocity & steering commands | `geometry_msgs/Twist` | ROS→GZ | - | Vehicle control |
 
 </center>
 
 ## Sensor Topics
 <center>
 
-| **Topic** | **Description** | **Message Type** | **Dir** | **Hz** | **Role** |
-|-----------|-----------------|------------------|---------|--------|----------|
-| `/odom` | Vehicle odometry | `nav_msgs/Odometry` | GZ→ROS | 30 | Pose & velocity |
-| `/imu` | IMU data | `sensor_msgs/Imu` | GZ→ROS | 400 | Acceleration & orientation |
-| `/scan/points` | LiDAR point cloud | `sensor_msgs/PointCloud2` | GZ→ROS | 10 | 3D perception |
+  | **Topic** | **Description** | **Message Type** | **Dir** | **Hz** | **Role** |
+  |-----------|-----------------|------------------|---------|--------|----------|
+  | `/odom` | Vehicle odometry | `nav_msgs/Odometry` | GZ→ROS | 30 | Pose & velocity |
+  | `/imu` | IMU data | `sensor_msgs/Imu` | GZ→ROS | 400 | Acceleration & orientation |
+  | `/scan/points` | LiDAR point cloud | `sensor_msgs/PointCloud2` | GZ→ROS | 10 | 3D perception |
 
 </center>
 
 ## Camera Topics (ZED)
 <center>
 
-| **Topic** | **Description** | **Message Type** | **Dir** | **Hz** | **Role** |
-|-----------|-----------------|------------------|---------|--------|----------|
-| `camera/rgb/image` | RGB image | `sensor_msgs/Image` | GZ→ROS | 30 | Visual perception |
-| `camera/depth/image` | Depth image | `sensor_msgs/Image` | GZ→ROS | 30 | Depth perception |
-| `camera/pointcloud` | Camera point cloud | `sensor_msgs/PointCloud2` | GZ→ROS | 30 | 3D visual data |
-| `camera/camera_info` | Camera calibration | `sensor_msgs/CameraInfo` | GZ→ROS | 30 | Camera parameters |
+  | **Topic** | **Description** | **Message Type** | **Dir** | **Hz** | **Role** |
+  |-----------|-----------------|------------------|---------|--------|----------|
+  | `camera/rgb/image` | RGB image | `sensor_msgs/Image` | GZ→ROS | 30 | Visual perception |
+  | `camera/depth/image` | Depth image | `sensor_msgs/Image` | GZ→ROS | 30 | Depth perception |
+  | `camera/pointcloud` | Camera point cloud | `sensor_msgs/PointCloud2` | GZ→ROS | 30 | 3D visual data |
+  | `camera/camera_info` | Camera calibration | `sensor_msgs/CameraInfo` | GZ→ROS | 30 | Camera parameters |
 
 </center>
 
@@ -156,56 +156,56 @@ cd docker
 ### Physical Dimensions
 <center>
 
-| **Parameter** | **Value** | **Unit** | **Description** |
-|---------------|-----------|----------|-----------------|
-| **Wheelbase** | 1.8 | m | Front to rear axle distance |
-| **Track Width (F/R)** | 0.816/0.901 | m | Front/rear wheel spacing |
-| **Wheel Radius** | 0.6 | m | All wheels radius |
-| **Wheel Diameter** | 1.2 | m | All wheels diameter |
-| **Overall L×W** | ~2.4×1.0 | m | Estimated dimensions |
+  | **Parameter** | **Value** | **Unit** | **Description** |
+  |---------------|-----------|----------|-----------------|
+  | **Wheelbase** | 1.8 | m | Front to rear axle distance |
+  | **Track Width (F/R)** | 0.816/0.901 | m | Front/rear wheel spacing |
+  | **Wheel Radius** | 0.6 | m | All wheels radius |
+  | **Wheel Diameter** | 1.2 | m | All wheels diameter |
+  | **Overall L×W** | ~2.4×1.0 | m | Estimated dimensions |
 
 </center>
 
 ### Mass Properties
 <center>
 
-| **Component** | **Mass (kg)** | **Description** |
-|---------------|---------------|-----------------|
-| **Total Vehicle** | ~110 | Estimated total mass |
-| **Chassis** | 19.425 | Main vehicle chassis |
-| **Body** | 11.145 | Vehicle body structure |
-| **Drive Motor+Wheel** | 13.706 | Rear-left motorized assembly |
-| **Front Wheels (ea.)** | 2.747 | Front wheel mass each |
-| **Rear Wheel (passive)** | 2.792 | Rear-right passive wheel |
-| **Roof Assembly** | 1.407 | Roof structure |
-| **Velodyne LiDAR** | 0.696 | LiDAR sensor unit |
-| **ZED Camera** | 0.170 | Stereo camera unit |
+  | **Component** | **Mass (kg)** | **Description** |
+  |---------------|---------------|-----------------|
+  | **Total Vehicle** | ~110 | Estimated total mass |
+  | **Chassis** | 19.425 | Main vehicle chassis |
+  | **Body** | 11.145 | Vehicle body structure |
+  | **Drive Motor+Wheel** | 13.706 | Rear-left motorized assembly |
+  | **Front Wheels (ea.)** | 2.747 | Front wheel mass each |
+  | **Rear Wheel (passive)** | 2.792 | Rear-right passive wheel |
+  | **Roof Assembly** | 1.407 | Roof structure |
+  | **Velodyne LiDAR** | 0.696 | LiDAR sensor unit |
+  | **ZED Camera** | 0.170 | Stereo camera unit |
 
 </center>
 
 ### Performance Characteristics
 <center>
 
-| **Parameter** | **Value** | **Unit** | **Description** |
-|---------------|-----------|----------|-----------------|
-| **Max Speed** | 4.17 (15.0) | m/s (km/h) | Maximum velocity |
-| **Max Acceleration** | 3.0 | m/s² | Max acceleration/deceleration |
-| **Steering Limit** | ±20.0° | degrees | Max steering angle |
-| **Steering P-Gain** | 10.0 | - | Control proportional gain |
+  | **Parameter** | **Value** | **Unit** | **Description** |
+  |---------------|-----------|----------|-----------------|
+  | **Max Speed** | 4.17 (15.0) | m/s (km/h) | Maximum velocity |
+  | **Max Acceleration** | 3.0 | m/s² | Max acceleration/deceleration |
+  | **Steering Limit** | ±20.0° | degrees | Max steering angle |
+  | **Steering P-Gain** | 10.0 | - | Control proportional gain |
 
 </center>
 
 ### Drivetrain & Sensors
 <center>
 
-| **Parameter** | **Value/Type** | **Specifications** |
-|---------------|----------------|-------------------|
-| **Drive Type** | RWD | Rear-wheel drive (left powered) |
-| **Steering** | Ackermann | 2 front steered wheels |
-| **LiDAR** | Velodyne-style | 32 layers, 10K samples, 200m |
-| **Camera** | ZED Stereo | 2560×720, 110° FOV, 30Hz |
-| **IMU** | 6-DOF | 400Hz, base_link mounted |
-| **Odometry** | Wheel-based | 30Hz pose estimation |
+  | **Parameter** | **Value/Type** | **Specifications** |
+  |---------------|----------------|-------------------|
+  | **Drive Type** | RWD | Rear-wheel drive (left powered) |
+  | **Steering** | Ackermann | 2 front steered wheels |
+  | **LiDAR** | Velodyne-style | 32 layers, 10K samples, 200m |
+  | **Camera** | ZED Stereo | 2560×720, 110° FOV, 30Hz |
+  | **IMU** | 6-DOF | 400Hz, base_link mounted |
+  | **Odometry** | Wheel-based | 30Hz pose estimation |
 
 </center>
 
