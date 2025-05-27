@@ -109,12 +109,12 @@ sudo nvidia-ctk config --set nvidia-container-cli.no-cgroups --in-place
    sudo apt-get install ros-humble-joint* 
    ```
 3. run the simulator
-    1. docker container
+    1. Docker container (only work if you have nvidia gpu)
         ```bash
         cd docker
         ./run_simulator.sh
         ```
-    2. without docker
+    2. Without docker (can autodetect if you have gpu or not)
        ```bash
        source install setup.bash
        ros2 launch shell_car_model gz_simulator_launch.py  
