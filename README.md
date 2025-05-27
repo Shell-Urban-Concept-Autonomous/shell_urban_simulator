@@ -216,6 +216,6 @@ sudo nvidia-ctk config --set nvidia-container-cli.no-cgroups --in-place
 > # ScreenShots for inside the simulator
 
 <p align="center">
-<img width=600 src="https://github.com/user-attachments/assets/a85443a4-060b-4343-af05-7bcb578cb165"/>
-<img width=400 src="https://github.com/user-attachments/assets/dac5b400-0438-436f-944f-90e7e01d2b34"/>
+<img width=550 src="https://github.com/user-attachments/assets/a85443a4-060b-4343-af05-7bcb578cb165"/>
+<img width=320 src="https://github.com/user-attachments/assets/dac5b400-0438-436f-944f-90e7e01d2b34"/>
 </p>
