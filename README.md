@@ -103,13 +103,23 @@ sudo nvidia-ctk config --set nvidia-container-cli.no-cgroups --in-place
     echo "export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp" >> ~/.bashrc
     source .bashrc
     ```
-2. run the docker container
-    ```bash
-    cd docker
-    ./run_simulator.sh
-    ```
-</details>
-
+2. install dependencies (Skip this if you work with docker)
+   ```bashg
+   sudo apt-get install ros-humble-gz*
+   sudo apt-get install ros-humble-joint* 
+   ```
+3. run the simulator
+    1. docker container
+        ```bash
+        cd docker
+        ./run_simulator.sh
+        ```
+    2. without docker
+       ```bash
+       source install setup.bash
+       ros2 launch shell_car_model gz_simulator_launch.py  
+       ```
+       
 > # Topics
 
 ## Vehicle Control Topics
