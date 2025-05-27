@@ -113,27 +113,25 @@ sudo nvidia-ctk config --set nvidia-container-cli.no-cgroups --in-place
 > # Topics
 
 ## Vehicle Control Topics
-<center>
+<div align="center">
 
   | **Topic** | **Description** | **Message Type** | **Dir** | **Hz** | **Role** |
   |-----------|-----------------|------------------|---------|--------|----------|
   | `/cmd_vel` | Velocity & steering commands | `geometry_msgs/Twist` | ROS→GZ | - | Vehicle control |
-
-</center>
+</div>
 
 ## Sensor Topics
-<center>
+<div align="center">
 
   | **Topic** | **Description** | **Message Type** | **Dir** | **Hz** | **Role** |
   |-----------|-----------------|------------------|---------|--------|----------|
   | `/odom` | Vehicle odometry | `nav_msgs/Odometry` | GZ→ROS | 30 | Pose & velocity |
   | `/imu` | IMU data | `sensor_msgs/Imu` | GZ→ROS | 400 | Acceleration & orientation |
   | `/scan/points` | LiDAR point cloud | `sensor_msgs/PointCloud2` | GZ→ROS | 10 | 3D perception |
-
-</center>
+</div>
 
 ## Camera Topics (ZED)
-<center>
+<div align="center">
 
   | **Topic** | **Description** | **Message Type** | **Dir** | **Hz** | **Role** |
   |-----------|-----------------|------------------|---------|--------|----------|
@@ -141,19 +139,17 @@ sudo nvidia-ctk config --set nvidia-container-cli.no-cgroups --in-place
   | `camera/depth/image` | Depth image | `sensor_msgs/Image` | GZ→ROS | 30 | Depth perception |
   | `camera/pointcloud` | Camera point cloud | `sensor_msgs/PointCloud2` | GZ→ROS | 30 | 3D visual data |
   | `camera/camera_info` | Camera calibration | `sensor_msgs/CameraInfo` | GZ→ROS | 30 | Camera parameters |
-
-</center>
+</div>
 
 ## System Topics
-<center>
+<div align="center">
 
 | **Topic** | **Description** | **Message Type** | **Dir** | **Hz** | **Role** |
 |-----------|-----------------|------------------|---------|--------|----------|
 | `/joint_states` | Joint positions & velocities | `sensor_msgs/JointState` | GZ→ROS | 100 | Joint monitoring |
 | `/tf` | Transform tree | `tf2_msgs/TFMessage` | GZ→ROS | 30 | Coordinate frames |
 | `clock` | Simulation time | `rosgraph_msgs/Clock` | GZ→ROS | - | Time sync |
-
-</center>
+</div>
 
 ## Hardware Specifications
 - **Vehicle Model**: Shell Racing Car with Ackermann steering
@@ -165,8 +161,9 @@ sudo nvidia-ctk config --set nvidia-container-cli.no-cgroups --in-place
 ## Vehicle Specifications
 
 ### Physical Dimensions
-<center>
 
+<div align="center">
+  
   | **Parameter** | **Value** | **Unit** | **Description** |
   |---------------|-----------|----------|-----------------|
   | **Wheelbase** | 1.8 | m | Front to rear axle distance |
@@ -174,11 +171,10 @@ sudo nvidia-ctk config --set nvidia-container-cli.no-cgroups --in-place
   | **Wheel Radius** | 0.6 | m | All wheels radius |
   | **Wheel Diameter** | 1.2 | m | All wheels diameter |
   | **Overall L×W** | ~2.4×1.0 | m | Estimated dimensions |
-
-</center>
+</div>
 
 ### Mass Properties
-<center>
+<div align="center">
 
   | **Component** | **Mass (kg)** | **Description** |
   |---------------|---------------|-----------------|
@@ -191,11 +187,10 @@ sudo nvidia-ctk config --set nvidia-container-cli.no-cgroups --in-place
   | **Roof Assembly** | 1.407 | Roof structure |
   | **Velodyne LiDAR** | 0.696 | LiDAR sensor unit |
   | **ZED Camera** | 0.170 | Stereo camera unit |
-
-</center>
+</div>
 
 ### Performance Characteristics
-<center>
+<div align="center">
 
   | **Parameter** | **Value** | **Unit** | **Description** |
   |---------------|-----------|----------|-----------------|
@@ -203,11 +198,10 @@ sudo nvidia-ctk config --set nvidia-container-cli.no-cgroups --in-place
   | **Max Acceleration** | 3.0 | m/s² | Max acceleration/deceleration |
   | **Steering Limit** | ±20.0° | degrees | Max steering angle |
   | **Steering P-Gain** | 10.0 | - | Control proportional gain |
-
-</center>
+</div>
 
 ### Drivetrain & Sensors
-<center>
+<div align="center">
 
   | **Parameter** | **Value/Type** | **Specifications** |
   |---------------|----------------|-------------------|
@@ -217,8 +211,7 @@ sudo nvidia-ctk config --set nvidia-container-cli.no-cgroups --in-place
   | **Camera** | ZED Stereo | 2560×720, 110° FOV, 30Hz |
   | **IMU** | 6-DOF | 400Hz, base_link mounted |
   | **Odometry** | Wheel-based | 30Hz pose estimation |
-
-</center>
+</div>
 
 > # ScreenShots for inside the simulator
 
