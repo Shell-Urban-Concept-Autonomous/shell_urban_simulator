@@ -11,7 +11,9 @@ This is a simulator developed for Autotronics Research Teams to test their auton
 - Installed ros2 humble full desktop
 - Works only in Ubuntu distro
 ># Dependencies
-## Install docker
+<details><summary><h2>Install docker</h2></summary>
+</br>
+  
 ```bash
 sudo apt update && sudo apt upgrade -y
 
@@ -26,8 +28,12 @@ sudo apt update
 sudo apt install -y docker-ce docker-ce-cli containerd.io
 
 docker --version #to verfiy that docker is installed
-``` 
-## Post-Installation Steps
+```
+</details>
+
+<details><summary><h2>Post-Installation Steps</h2></summary>
+</br>
+  
 **Step 1**: Start and enable the Docker service
 ```bash
 sudo systemctl enable docker
@@ -35,8 +41,10 @@ sudo systemctl start docker
 sudo usermod -aG docker $USER
 ```
 After that please restart your device
+</details>
 
->## Install nvidia docker tool-kit
+<details><summary><h2>Install nvidia docker tool-kit</h2></summary>
+</br>
 
 **Step 1:**
 ```bash
@@ -85,8 +93,10 @@ systemctl --user restart docker
 ```bash
 sudo nvidia-ctk config --set nvidia-container-cli.no-cgroups --in-place
 ```
+</details>
 
-># How To RUN
+> # How to run
+
 1. install cyclone dds to have intercommunication without any problem
     ```bash
     sudo apt install ros-${ROS_DISTRO}-rmw-cyclonedds-cpp
@@ -94,10 +104,11 @@ sudo nvidia-ctk config --set nvidia-container-cli.no-cgroups --in-place
     source .bashrc
     ```
 2. run the docker container
-```bash
-cd docker
-./run_simulator.sh
-```
+    ```bash
+    cd docker
+    ./run_simulator.sh
+    ```
+</details>
 
 # Topics
 
